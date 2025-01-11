@@ -9,19 +9,17 @@ export const Hero = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.{" "}
-              <a href="#" className="font-semibold text-primary">
+              <a href="#" className="font-semibold text-[#0C7BCE]">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Transforming Sales and Customer Service with{" "}
-            <span className="text-primary">AI-Powered Digital Workers</span>
+            Intelligent Human-like <span className="text-[#0C7BCE]">AI Digital Workers</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Empower your business to scale effortlessly by automating repetitive tasks and optimizing
-            customer interactions through intelligent, human-like AI.
+            Grow Your Business with Ease by Automating Routine Tasks and Improving Customer Interactions with Smart, Human-Like AI.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" className="group">
@@ -36,7 +34,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className="absolute inset-0 -z-10 opacity-10 mix-blend-multiply">
-        <div className="absolute inset-0 bg-gradient-to-tr from-primary-300 to-primary-100" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#0C7BCE]/30 to-[#0C7BCE]/10" />
       </div>
     </div>
   );

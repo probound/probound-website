@@ -1,23 +1,25 @@
-import { Bot, HeartHandshake, CheckCircle2 } from "lucide-react";
+import { Bot, HeartHandshake, CheckCircle2, PhoneCall, User } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import { Button } from "./ui/button";
 
 const workers = [
   {
     name: "Kelly",
     role: "AI Sales Development Representative",
-    description: "Identifies, contacts, and nurtures leads through intelligent, data-driven engagement.",
+    description: "Makes realistic cold calls, qualify leads, and schedule demos seamlessly.",
     icon: Bot,
     features: [
-      "Lead Generation & Pipeline Management",
-      "Intelligent Data-Driven Engagement",
-      "24/7 Lead Response Operations",
+      "Scale Outbound Cold Calls",
+      "Smart Engagement",
+      "Always On",
     ],
     testimonial: {
       quote: "Kelly has transformed our sales process, handling lead qualification with incredible precision.",
-      author: "Michael Chen",
-      position: "Sales Director",
+      author: "Dione D",
+      position: "President",
     },
     bgColor: "bg-[#E6F4F1]",
+    phoneNumber: "14153198525"
   },
   {
     name: "Jordan",
@@ -62,7 +64,7 @@ export const DigitalWorkers = () => {
             >
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="space-y-6">
-                  <div className="inline-flex items-center gap-2 text-primary-600 font-medium">
+                  <div className="inline-flex items-center gap-2 text-[#0C7BCE] font-medium">
                     <span className="w-8 h-8 rounded-lg bg-white/80 flex items-center justify-center">
                       <worker.icon className="w-5 h-5" />
                     </span>
@@ -75,7 +77,7 @@ export const DigitalWorkers = () => {
                   <ul className="space-y-3">
                     {worker.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2 text-gray-700">
-                        <CheckCircle2 className="w-5 h-5 text-primary-600 flex-shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#0C7BCE] flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -83,10 +85,17 @@ export const DigitalWorkers = () => {
 
                   <Card className="bg-white/80 backdrop-blur-sm border-none">
                     <CardContent className="pt-6">
-                      <blockquote className="text-gray-700">"{worker.testimonial.quote}"</blockquote>
-                      <div className="mt-4">
-                        <div className="font-semibold">{worker.testimonial.author}</div>
-                        <div className="text-sm text-gray-500">{worker.testimonial.position}</div>
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
+                          <User className="w-6 h-6 text-gray-600" />
+                        </div>
+                        <div>
+                          <blockquote className="text-gray-700">"{worker.testimonial.quote}"</blockquote>
+                          <div className="mt-4">
+                            <div className="font-semibold">{worker.testimonial.author}</div>
+                            <div className="text-sm text-gray-500">{worker.testimonial.position}</div>
+                          </div>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -96,8 +105,8 @@ export const DigitalWorkers = () => {
                   <div className="bg-white rounded-2xl p-6 shadow-lg">
                     <div className="space-y-4">
                       <div className="flex items-center gap-3 p-4 rounded-lg border bg-gray-50/50">
-                        <div className="w-10 h-10 rounded bg-primary-100 flex items-center justify-center">
-                          <worker.icon className="w-5 h-5 text-primary-600" />
+                        <div className="w-10 h-10 rounded bg-[#0C7BCE]/10 flex items-center justify-center">
+                          <worker.icon className="w-5 h-5 text-[#0C7BCE]" />
                         </div>
                         <div>
                           <div className="font-medium">{worker.name}</div>
@@ -115,6 +124,17 @@ export const DigitalWorkers = () => {
                           </div>
                         ))}
                       </div>
+
+                      <Button 
+                        className="w-full mt-4"
+                        size="lg"
+                        asChild
+                      >
+                        <a href={`tel:${worker.phoneNumber}`} className="flex items-center justify-center gap-2">
+                          <PhoneCall className="w-4 h-4" />
+                          Speak with {worker.name}
+                        </a>
+                      </Button>
                     </div>
                   </div>
                 </div>

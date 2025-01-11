@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Globe2 } from "lucide-react";
+import { Globe2, Users, Building2, Briefcase } from "lucide-react";
 
 export const Navigation = () => {
   return (
@@ -7,16 +7,23 @@ export const Navigation = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-16 px-4">
           <div className="flex items-center gap-2">
-            <Globe2 className="w-8 h-8 text-primary" />
+            <Globe2 className="w-8 h-8 text-[#0C7BCE]" />
             <span className="text-xl font-bold">ProBound.ai</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-primary">Features</a>
-            <a href="#pricing" className="text-gray-600 hover:text-primary">Pricing</a>
-            <a href="#insights" className="text-gray-600 hover:text-primary">Insights</a>
-            <a href="#about" className="text-gray-600 hover:text-primary">About</a>
-            <a href="#contact" className="text-gray-600 hover:text-primary">Contact</a>
+            <a href="#agents" className="flex items-center gap-2 text-gray-600 hover:text-[#0C7BCE]">
+              <Users className="w-4 h-4" />
+              Agents
+            </a>
+            <a href="#industry" className="flex items-center gap-2 text-gray-600 hover:text-[#0C7BCE]">
+              <Building2 className="w-4 h-4" />
+              Industry
+            </a>
+            <a href="#company" className="flex items-center gap-2 text-gray-600 hover:text-[#0C7BCE]">
+              <Briefcase className="w-4 h-4" />
+              Company
+            </a>
           </div>
 
           <div className="flex items-center gap-4">
