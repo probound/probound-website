@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 const workers = [
   {
     name: "James",
-    role: "AI Sales Development Representative",
+    role: "AI Phone Agent",
     description: "Makes realistic cold calls, qualify leads, and schedule demos seamlessly.",
     icon: Bot,
     features: [
@@ -23,7 +23,7 @@ const workers = [
   },
   {
     name: "Kelly",
-    role: "AI Customer Service Assistant",
+    role: "AI Sales Development Rep",
     description: "Handles inquiries with empathy and precision, providing instant and accurate responses.",
     icon: HeartHandshake,
     features: [
@@ -53,7 +53,7 @@ export const DigitalWorkers = () => {
                 <img 
                   src={worker.image} 
                   alt={worker.name}
-                  className={`object-cover w-full h-full ${worker.name === 'James' ? 'scale-125 object-top' : ''}`}
+                  className={`object-cover w-full h-full ${worker.name === 'James' ? 'scale-125 object-top' : 'scale-125 object-top'}`}
                 />
                 <div className="absolute bottom-4 left-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm">
                   {worker.name} - {worker.role}
