@@ -1,5 +1,4 @@
-import { Bot, HeartHandshake, CheckCircle2, PhoneCall, User } from "lucide-react";
-import { Card, CardContent } from "./ui/card";
+import { Bot, HeartHandshake, CheckCircle2, PhoneCall } from "lucide-react";
 import { Button } from "./ui/button";
 
 const workers = [
