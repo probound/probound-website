@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Globe2, Users, Building2, Briefcase } from "lucide-react";
+import { Globe2 } from "lucide-react";
 
 export const Navigation = () => {
   return (
@@ -12,16 +12,13 @@ export const Navigation = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#agents" className="flex items-center gap-2 text-gray-600 hover:text-[#0C7BCE]">
-              <Users className="w-4 h-4" />
+            <a href="#agents" className="text-gray-600 hover:text-[#0C7BCE]">
               Agents
             </a>
-            <a href="#industry" className="flex items-center gap-2 text-gray-600 hover:text-[#0C7BCE]">
-              <Building2 className="w-4 h-4" />
+            <a href="#industry" className="text-gray-600 hover:text-[#0C7BCE]">
               Industry
             </a>
-            <a href="#company" className="flex items-center gap-2 text-gray-600 hover:text-[#0C7BCE]">
-              <Briefcase className="w-4 h-4" />
+            <a href="#company" className="text-gray-600 hover:text-[#0C7BCE]">
               Company
             </a>
           </div>
