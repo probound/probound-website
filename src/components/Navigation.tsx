@@ -44,12 +44,15 @@ export const Navigation = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-            <a href="#industry" className="text-gray-600 hover:text-[#0C7BCE]">
-              Industry
-            </a>
-            <a href="#company" className="text-gray-600 hover:text-[#0C7BCE]">
+            <Link to="/use-cases" className="text-gray-600 hover:text-[#0C7BCE]">
+              Use Cases
+            </Link>
+            <Link to="/company" className="text-gray-600 hover:text-[#0C7BCE]">
               Company
-            </a>
+            </Link>
+            <Link to="/blog" className="text-gray-600 hover:text-[#0C7BCE]">
+              Blog
+            </Link>
           </div>
 
           <div className="flex items-center gap-4">
