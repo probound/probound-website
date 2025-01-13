@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="bg-[#4ADE80] w-8 h-8 rounded flex items-center justify-center">
                 <span className="text-black text-xl font-bold">+</span>
               </div>
-              <span className="text-xl font-bold">viralhooks</span>
+              <span className="text-xl font-bold">probound</span>
             </div>
             <p className="text-gray-400 text-sm mb-4">Curated with 🔥 from Pitch Liew</p>
             <p className="text-gray-400 text-sm">By Creators, For Creators</p>
@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-bold mb-6">Contact Us</h3>
-              <p className="text-gray-400">hello@viralhooks.ai</p>
+              <p className="text-gray-400">hello@probound.ai</p>
             </div>
             
             <div className="space-y-4">
@@ -53,7 +53,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Viralhooks AI. All rights reserved.
+            © {currentYear} probound AI. All rights reserved.
           </p>
         </div>
       </div>
