@@ -53,9 +53,9 @@ export const DigitalWorkers = () => {
                 <img 
                   src={worker.image} 
                   alt={worker.name}
-                  className="object-cover w-full h-full"
+                  className={`object-cover w-full h-full ${worker.name === 'James' ? 'scale-125 object-top' : ''}`}
                 />
-                <div className="absolute top-4 left-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm">
+                <div className="absolute bottom-4 left-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm">
                   {worker.name} - {worker.role}
                 </div>
               </div>
