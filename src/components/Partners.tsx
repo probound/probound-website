@@ -1,17 +1,17 @@
 export const Partners = () => {
   return (
-    <section className="py-12 bg-gray-50/50">
+    <section className="py-16 bg-white">
       <div className="container">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold mb-2">Trusted for overall simplicity</h2>
-          <p className="text-gray-600">Based on 4,000+ reviews with customer satisfaction</p>
+        <div className="text-center mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Trusted by Industry Leaders</h2>
+          <p className="text-gray-600">Join thousands of companies transforming their operations with ProBound</p>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-          <img src="/placeholder.svg" alt="Partner 1" className="h-8 opacity-60 hover:opacity-100 transition-opacity" />
-          <img src="/placeholder.svg" alt="Partner 2" className="h-8 opacity-60 hover:opacity-100 transition-opacity" />
-          <img src="/placeholder.svg" alt="Partner 3" className="h-8 opacity-60 hover:opacity-100 transition-opacity" />
-          <img src="/placeholder.svg" alt="Partner 4" className="h-8 opacity-60 hover:opacity-100 transition-opacity" />
-          <img src="/placeholder.svg" alt="Partner 5" className="h-8 opacity-60 hover:opacity-100 transition-opacity" />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center opacity-70">
+          {[1, 2, 3, 4, 5].map((index) => (
+            <div key={index} className="w-32 h-12 bg-gray-200/50 rounded-lg flex items-center justify-center">
+              <span className="text-gray-400 font-medium">Partner {index}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
