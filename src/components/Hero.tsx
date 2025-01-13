@@ -31,7 +31,6 @@ export const Hero = () => {
               Schedule Demo
             </Button>
           </div>
-          <p className="mt-4 text-sm text-gray-500">No credit card required.</p>
         </div>
       </div>
       <div className="absolute inset-0 -z-10 opacity-10 mix-blend-multiply">
