@@ -19,7 +19,7 @@ const workers = [
     },
     bgColor: "bg-[#F5F5F4]",
     phoneNumber: "14153198525",
-    image: "/lovable-uploads/af358880-c846-4b1f-8665-1e0796b542e8.png"
+    image: "/lovable-uploads/photo-1581092795360-fd1ca04f0952.jpg"
   },
   {
     name: "Kelly",
@@ -38,7 +38,7 @@ const workers = [
     },
     bgColor: "bg-[#F5F5F4]",
     phoneNumber: "14153198525",
-    image: "/lovable-uploads/af358880-c846-4b1f-8665-1e0796b542e8.png"
+    image: "/lovable-uploads/photo-1649972904349-6e44c42644a7.jpg"
   },
 ];
 
