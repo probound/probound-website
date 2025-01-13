@@ -16,7 +16,8 @@ export const Hero = () => {
             </div>
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Intelligent Human-like <span className="text-[#0C7BCE]">AI Digital Workers</span>
+            Intelligent Human-like<br />
+            <span className="text-[#0C7BCE]">AI Digital Workers</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Grow Your Business with Ease by Automating Routine Tasks and Improving Customer Interactions with Smart, Human-Like AI.
