@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { PhoneCall, Sparkles } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -25,9 +25,11 @@ export const Hero = () => {
             Transform your business operations with our advanced AI digital workers. Experience seamless automation and human-like interactions that drive growth and efficiency.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button size="lg" className="group text-lg px-8">
-              Start Free Trial
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Button size="lg" className="group text-lg px-8" asChild>
+              <a href="tel:14153198525" className="flex items-center gap-2">
+                <PhoneCall className="w-4 h-4" />
+                Speak with Kelly
+              </a>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8">
               Schedule Demo

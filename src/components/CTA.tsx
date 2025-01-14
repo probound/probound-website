@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { PhoneCall, Sparkles } from "lucide-react";
 
 export const CTA = () => {
   return (
@@ -19,10 +19,6 @@ export const CTA = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" variant="secondary" className="bg-white text-primary-600 hover:bg-primary-50 text-lg px-8">
-                Start Free Trial
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-primary-500 text-lg px-8">
                 Schedule Demo
               </Button>
             </div>

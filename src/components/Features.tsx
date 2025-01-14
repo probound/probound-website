@@ -49,7 +49,7 @@ export const Features = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
-            Why Choose ProBound.ai?
+            Our Advantage
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Our platform combines cutting-edge AI with enterprise-grade features to deliver unmatched business value.

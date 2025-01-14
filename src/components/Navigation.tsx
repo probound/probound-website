@@ -4,7 +4,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
@@ -16,8 +15,7 @@ export const Navigation = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-16 px-4">
           <Link to="/" className="flex items-center gap-2">
-            <Globe2 className="w-8 h-8 text-[#0C7BCE]" />
-            <span className="text-xl font-bold">probound</span>
+            <img src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" alt="ProBound" className="h-8" />
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -44,9 +42,6 @@ export const Navigation = () => {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-            <Link to="/use-cases" className="text-gray-600 hover:text-[#0C7BCE]">
-              Use Cases
-            </Link>
             <Link to="/company" className="text-gray-600 hover:text-[#0C7BCE]">
               Company
             </Link>
@@ -56,8 +51,7 @@ export const Navigation = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button variant="ghost">Log in</Button>
-            <Button>Start free trial</Button>
+            <Button>Schedule Demo</Button>
           </div>
         </div>
       </div>

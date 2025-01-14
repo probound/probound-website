@@ -1,42 +1,20 @@
-import { Bot, HeartHandshake, CheckCircle2, PhoneCall } from "lucide-react";
+import { Bot, HeartHandshake, PhoneCall } from "lucide-react";
 import { Button } from "./ui/button";
 
 const workers = [
   {
     name: "James",
-    role: "AI Phone Agent",
-    description: "Makes realistic cold calls, qualify leads, and schedule demos seamlessly.",
+    role: "AI Sales Development Rep",
+    description: "I make outbound calls to your ideal customers, qualify your leads, and book them on your calendar - operating 24/7, on autopilot.",
     icon: Bot,
-    features: [
-      "Scale Outbound Cold Calls",
-      "Smart Engagement",
-      "Always On",
-    ],
-    testimonial: {
-      quote: "James has transformed our sales process, handling lead qualification with incredible precision.",
-      author: "Dione D",
-      position: "President",
-    },
-    bgColor: "bg-[#F5F5F4]",
     phoneNumber: "14153198525",
     image: "/lovable-uploads/6858bebe-8b28-4358-aebc-18b3248538cb.png"
   },
   {
     name: "Kelly",
-    role: "AI Sales Development Rep",
-    description: "Handles inquiries with empathy and precision, providing instant and accurate responses.",
+    role: "AI Customer Support",
+    description: "I take inbound calls from your customers, answer their questions, handle conversations naturally, and resolve their asks - 24/7 on autopilot.",
     icon: HeartHandshake,
-    features: [
-      "24/7 Customer Support",
-      "Empathetic Communication",
-      "Seamless Issue Management",
-    ],
-    testimonial: {
-      quote: "The level of customer satisfaction has increased dramatically since implementing Kelly.",
-      author: "Sarah M",
-      position: "Customer Success Lead",
-    },
-    bgColor: "bg-[#F5F5F4]",
     phoneNumber: "14153198525",
     image: "/lovable-uploads/5a92af00-06e1-4449-a871-95ed6c064182.png"
   },
@@ -63,15 +41,6 @@ export const DigitalWorkers = () => {
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">{worker.name}</h3>
                 <p className="text-gray-600">{worker.description}</p>
-
-                <ul className="space-y-3">
-                  {worker.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-gray-700">
-                      <CheckCircle2 className="w-5 h-5 text-[#0C7BCE] flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
 
                 <Button 
                   size="lg"
