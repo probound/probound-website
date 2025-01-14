@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Building2, Users2, Target, Rocket, Award, Heart } from "lucide-react";
+import { Target, Users2, Heart } from "lucide-react";
 
 const Company = () => {
   return (
@@ -18,10 +18,12 @@ const Company = () => {
                 Empowering Businesses with AI Innovation
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                ProBound.ai is revolutionizing the way businesses operate by providing intelligent digital workforce solutions that drive growth and efficiency.
+                probound is revolutionizing the way businesses operate by providing intelligent digital workforce solutions that drive growth and efficiency.
               </p>
-              <Button size="lg" className="bg-primary-600 hover:bg-primary-700">
-                Join Our Journey
+              <Button size="lg" asChild>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScf5acG-weGSYuYsJ8PN1b81VJofJ9-PDJ7b4fapY2m4KVQVw/viewform?usp=sf_link">
+                  Join Our Journey
+                </a>
               </Button>
             </div>
           </div>
@@ -56,45 +58,6 @@ const Company = () => {
                   <value.icon className="w-12 h-12 text-primary-600 mb-4" />
                   <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
                   <p className="text-gray-600">{value.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Team Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="container">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership</h2>
-              <p className="text-lg text-gray-600">Meet the team behind ProBound.ai</p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Sarah Chen",
-                  role: "CEO & Founder",
-                  image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
-                },
-                {
-                  name: "Michael Ross",
-                  role: "CTO",
-                  image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
-                },
-                {
-                  name: "Emily Wong",
-                  role: "Head of AI",
-                  image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80",
-                },
-              ].map((member, index) => (
-                <div key={index} className="text-center">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                  />
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-gray-600">{member.role}</p>
                 </div>
               ))}
             </div>

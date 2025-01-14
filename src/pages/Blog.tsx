@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -15,7 +16,7 @@ const Blog = () => {
           <div className="container relative">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-5xl font-bold tracking-tight text-gray-900 mb-6">
-                ProBound.ai Blog
+                probound Blog
               </h1>
               <p className="text-xl text-gray-600">
                 Insights, updates, and stories about AI innovation and digital workforce
@@ -27,34 +28,36 @@ const Blog = () => {
         {/* Featured Post */}
         <section className="py-12 bg-white">
           <div className="container">
-            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-                alt="AI Innovation"
-                className="w-full h-[400px] object-cover"
-              />
-              <div className="p-8">
-                <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
-                  <span className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
-                    March 15, 2024
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    5 min read
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <User className="w-4 h-4" />
-                    Sarah Chen
-                  </span>
+            <Link to="/blog/future-of-ai" className="block">
+              <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img
+                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                  alt="AI Innovation"
+                  className="w-full h-[400px] object-cover"
+                />
+                <div className="p-8">
+                  <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      March 15, 2024
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-4 h-4" />
+                      5 min read
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <User className="w-4 h-4" />
+                      Kemi
+                    </span>
+                  </div>
+                  <h2 className="text-3xl font-bold mb-4">The Future of AI in Business Operations</h2>
+                  <p className="text-gray-600 mb-6">
+                    Explore how artificial intelligence is reshaping the way businesses operate and what the future holds for digital workforce solutions.
+                  </p>
+                  <Button>Read More</Button>
                 </div>
-                <h2 className="text-3xl font-bold mb-4">The Future of AI in Business Operations</h2>
-                <p className="text-gray-600 mb-6">
-                  Explore how artificial intelligence is reshaping the way businesses operate and what the future holds for digital workforce solutions.
-                </p>
-                <Button>Read More</Button>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
 
@@ -70,6 +73,7 @@ const Blog = () => {
                   image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
                   date: "March 10, 2024",
                   readTime: "4 min read",
+                  slug: "ai-transforming-customer-service"
                 },
                 {
                   title: "The Rise of Digital Workers",
@@ -77,6 +81,7 @@ const Blog = () => {
                   image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
                   date: "March 5, 2024",
                   readTime: "3 min read",
+                  slug: "rise-of-digital-workers"
                 },
                 {
                   title: "AI Ethics in Business",
@@ -84,32 +89,39 @@ const Blog = () => {
                   image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
                   date: "March 1, 2024",
                   readTime: "6 min read",
+                  slug: "ai-ethics-in-business"
                 },
               ].map((post, index) => (
-                <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-4 h-4" />
-                        {post.date}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-4 h-4" />
-                        {post.readTime}
-                      </span>
+                <Link key={index} to={`/blog/${post.slug}`} className="block">
+                  <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-6">
+                      <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-4 h-4" />
+                          {post.date}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="w-4 h-4" />
+                          {post.readTime}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <User className="w-4 h-4" />
+                          Kemi
+                        </span>
+                      </div>
+                      <h3 className="text-xl font-semibold mb-3">{post.title}</h3>
+                      <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                      <Button variant="ghost" className="text-primary hover:text-primary-700 p-0">
+                        Read More →
+                      </Button>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3">{post.title}</h3>
-                    <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                    <Button variant="ghost" className="text-primary-600 hover:text-primary-700 p-0">
-                      Read More →
-                    </Button>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

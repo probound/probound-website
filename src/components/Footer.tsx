@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin, Youtube, Twitter } from "lucide-react";
+import { Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,22 +10,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" alt="ProBound" className="h-8" />
+              <img src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" alt="ProBound" className="h-8 brightness-0 invert" />
             </div>
             <p className="text-gray-400 text-sm">AI Digital Workers for Sales and Customer Support</p>
             
             <div className="flex gap-4 mt-6">
-              <Link to="https://instagram.com" className="bg-[#1A1A1A] p-2 rounded-full hover:bg-gray-800">
-                <Instagram className="w-5 h-5" />
-              </Link>
               <Link to="https://twitter.com" className="bg-[#1A1A1A] p-2 rounded-full hover:bg-gray-800">
                 <Twitter className="w-5 h-5" />
               </Link>
-              <Link to="https://youtube.com" className="bg-[#1A1A1A] p-2 rounded-full hover:bg-gray-800">
-                <Youtube className="w-5 h-5" />
-              </Link>
-              <Link to="https://facebook.com" className="bg-[#1A1A1A] p-2 rounded-full hover:bg-gray-800">
-                <Facebook className="w-5 h-5" />
+              <Link to="https://linkedin.com" className="bg-[#1A1A1A] p-2 rounded-full hover:bg-gray-800">
+                <Linkedin className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -52,7 +46,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-400 text-sm">
-            © {currentYear} probound AI. All rights reserved.
+            © {currentYear} probound. All rights reserved.
           </p>
         </div>
       </div>

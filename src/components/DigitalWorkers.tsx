@@ -13,7 +13,7 @@ const workers = [
   {
     name: "Kelly",
     role: "AI Customer Support",
-    description: "I take inbound calls from your customers, answer their questions, handle conversations naturally, and resolve their asks - 24/7 on autopilot.",
+    description: "I take inbound calls from your customers, answer their questions, handle conversations naturally in multiple languages - 24/7 on autopilot.",
     icon: HeartHandshake,
     phoneNumber: "14153198525",
     image: "/lovable-uploads/5a92af00-06e1-4449-a871-95ed6c064182.png"
@@ -47,7 +47,7 @@ export const DigitalWorkers = () => {
                   className="w-full"
                   asChild
                 >
-                  <a href={`tel:${worker.phoneNumber}`} className="flex items-center justify-center gap-2">
+                  <a href={`tel:${worker.phoneNumber}`} className="flex items-center gap-2">
                     <PhoneCall className="w-4 h-4" />
                     Speak with {worker.name}
                   </a>
