@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" 
                 alt="ProBound" 
-                className="h-16 w-auto object-contain brightness-0 invert contrast-125" 
+                className="h-48 w-auto object-contain brightness-0 invert contrast-125" 
               />
             </div>
             <p className="text-gray-400 text-sm">AI Digital Workers for Sales and Customer Support</p>

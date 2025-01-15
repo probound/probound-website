@@ -13,12 +13,12 @@ export const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b">
       <div className="container mx-auto">
-        <div className="flex items-center justify-between h-16 px-4">
+        <div className="flex items-center justify-between h-24 px-4">
           <Link to="/" className="flex items-center gap-2">
             <img 
               src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" 
               alt="ProBound" 
-              className="h-12 w-auto object-contain brightness-100 contrast-125" 
+              className="h-36 w-auto object-contain brightness-100 contrast-125" 
             />
           </Link>
           
