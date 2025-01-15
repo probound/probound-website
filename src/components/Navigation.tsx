@@ -49,9 +49,9 @@ export const Navigation = () => {
             <Link to="/company" className="text-gray-600 hover:text-primary">
               Company
             </Link>
-            <Link to="/blog" className="text-gray-600 hover:text-primary">
-              Blog
-            </Link>
+            <a href="mailto:founders@probound.ai" className="text-gray-600 hover:text-primary">
+              Contact
+            </a>
           </div>
 
           <div className="flex items-center gap-4">

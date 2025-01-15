@@ -21,7 +21,7 @@ const Company = () => {
                 probound is revolutionizing the way businesses operate by providing intelligent digital workforce solutions that drive growth and efficiency.
               </p>
               <Button size="lg" asChild>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScf5acG-weGSYuYsJ8PN1b81VJofJ9-PDJ7b4fapY2m4KVQVw/viewform?usp=sf_link">
+                <a href="mailto:founders@probound.ai">
                   Join Our Journey
                 </a>
               </Button>

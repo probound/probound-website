@@ -76,13 +76,13 @@ const WorkerDetails = () => {
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">{worker.description}</p>
               <div className="flex gap-4 flex-wrap">
-                <Button size="lg" className="text-lg" asChild>
+                <Button size="lg" className="text-lg hover:bg-[#9b87f5]" asChild>
                   <a href={`tel:${worker.phoneNumber}`} className="flex items-center gap-2">
                     <PhoneCall className="w-5 h-5" />
                     Speak with {worker.name}
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg">
+                <Button size="lg" variant="outline" className="text-lg hover:bg-[#9b87f5] hover:text-white">
                   <Briefcase className="w-5 h-5 mr-2" />
                   Hire Me
                 </Button>
