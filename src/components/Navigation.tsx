@@ -15,7 +15,11 @@ export const Navigation = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-16 px-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" alt="ProBound" className="h-12" />
+            <img 
+              src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" 
+              alt="ProBound" 
+              className="h-12 w-auto object-contain brightness-100 contrast-125" 
+            />
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
