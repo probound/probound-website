@@ -18,8 +18,8 @@ export const CTA = () => {
               Leverage our AI digital workers to streamline operations and boost growth today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" variant="secondary" className="bg-white text-primary-600 hover:bg-primary-50 text-lg px-8">
-                Schedule Demo
+              <Button size="lg" variant="secondary" className="bg-white text-primary-600 hover:bg-primary-50 text-lg px-8" asChild>
+                <a href="mailto:founders@probound.ai">Schedule Demo</a>
               </Button>
             </div>
           </div>

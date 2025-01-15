@@ -31,8 +31,8 @@ export const Hero = () => {
                 Speak with Kelly
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8">
-              Schedule Demo
+            <Button variant="outline" size="lg" className="text-lg px-8" asChild>
+              <a href="mailto:founders@probound.ai">Schedule Demo</a>
             </Button>
           </div>
         </div>

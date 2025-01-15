@@ -56,7 +56,7 @@ export const Navigation = () => {
 
           <div className="flex items-center gap-4">
             <Button asChild>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScf5acG-weGSYuYsJ8PN1b81VJofJ9-PDJ7b4fapY2m4KVQVw/viewform?usp=sf_link">
+              <a href="mailto:founders@probound.ai">
                 Schedule Demo
               </a>
             </Button>
