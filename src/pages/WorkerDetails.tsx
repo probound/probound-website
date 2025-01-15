@@ -8,8 +8,8 @@ const workers = {
   kelly: {
     name: "Kelly",
     greeting: "Hi, I'm Kelly.",
-    role: "AI Sales Development Rep",
-    description: "I help sales teams scale their outreach by handling lead qualification and scheduling demos with precision and empathy.",
+    role: "AI Customer Support",
+    description: "I take inbound calls from your customers, answer their questions, handle conversations naturally in multiple languages - 24/7.",
     features: [
       {
         title: "Track Your Market",
@@ -33,8 +33,8 @@ const workers = {
   james: {
     name: "James",
     greeting: "Hi, I'm James.",
-    role: "AI Phone Agent",
-    description: "I help businesses scale their outbound calling efforts by making natural, engaging calls that convert leads into opportunities.",
+    role: "AI Sales Development Rep",
+    description: "I make outbound calls to your ideal customers, qualify your leads, and book them on your calendar - on autopilot.",
     features: [
       {
         title: "Track Your Market",
@@ -67,50 +67,50 @@ const WorkerDetails = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Hero Section */}
-      <div className="relative bg-[#F5F5F4] pt-32 pb-24">
+      <div className="relative bg-gradient-to-b from-primary-50 to-white pt-32 pb-24">
         <div className="container max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-5xl font-bold tracking-tight">{worker.greeting}</h1>
-              <p className="text-xl text-gray-600">{worker.description}</p>
+            <div className="space-y-8">
+              <h1 className="text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400">
+                {worker.greeting}
+              </h1>
+              <p className="text-xl text-gray-600 leading-relaxed">{worker.description}</p>
               <div className="flex gap-4 flex-wrap">
-                <Button size="lg" asChild>
+                <Button size="lg" className="text-lg" asChild>
                   <a href={`tel:${worker.phoneNumber}`} className="flex items-center gap-2">
-                    <PhoneCall className="w-4 h-4" />
+                    <PhoneCall className="w-5 h-5" />
                     Speak with {worker.name}
                   </a>
                 </Button>
-                <Button size="lg" variant="secondary">
-                  <Briefcase className="w-4 h-4 mr-2" />
+                <Button size="lg" variant="outline" className="text-lg">
+                  <Briefcase className="w-5 h-5 mr-2" />
                   Hire Me
                 </Button>
               </div>
             </div>
             <div className="relative">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img 
                   src={worker.image}
                   alt={worker.name}
                   className="object-cover w-full h-full scale-125 object-top"
                 />
-              </div>
-              <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-sm text-white px-6 py-3 rounded-xl">
-                <div className="text-sm opacity-80">Now talking to</div>
-                <div className="font-medium">{worker.name} - {worker.role}</div>
+                <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-sm text-white px-6 py-4 rounded-2xl">
+                  <div className="text-sm opacity-80">Now talking to</div>
+                  <div className="text-lg font-medium">{worker.name} - {worker.role}</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Use Cases Section */}
       <div className="py-24 bg-white">
         <div className="container max-w-7xl">
-          <h2 className="text-3xl font-bold mb-12">Use Cases</h2>
+          <h2 className="text-4xl font-bold mb-12">What I Can Do</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {worker.features.map((feature, index) => (
-              <div key={index} className="group p-8 rounded-xl bg-gray-50 hover:bg-primary hover:text-white transition-all duration-300">
+              <div key={index} className="group p-8 rounded-2xl bg-gray-50 hover:bg-primary hover:text-white transition-all duration-300">
                 <feature.icon className="w-12 h-12 mb-6 text-primary group-hover:text-white" />
                 <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
                 <p className="text-gray-600 group-hover:text-white/90 mb-6">{feature.description}</p>
@@ -119,29 +119,6 @@ const WorkerDetails = () => {
                 </Button>
               </div>
             ))}
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="py-24 bg-primary text-white">
-        <div className="container max-w-7xl text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Scale Your Business?</h2>
-          <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-            Let {worker.name} help you automate your {worker.role === "AI Phone Agent" ? "outbound calls" : "lead qualification"} 
-            and grow your business faster.
-          </p>
-          <div className="flex gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild>
-              <a href={`tel:${worker.phoneNumber}`}>
-                <PhoneCall className="w-4 h-4 mr-2" />
-                Speak with {worker.name}
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-primary">
-              <Briefcase className="w-4 h-4 mr-2" />
-              Hire {worker.name}
-            </Button>
           </div>
         </div>
       </div>

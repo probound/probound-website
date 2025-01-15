@@ -5,7 +5,7 @@ const workers = [
   {
     name: "James",
     role: "AI Sales Development Rep",
-    description: "I make outbound calls to your ideal customers, qualify your leads, and book them on your calendar - operating 24/7, on autopilot.",
+    description: "I make outbound calls to your ideal customers, qualify your leads, and book them on your calendar - on autopilot.",
     icon: Bot,
     phoneNumber: "14153198525",
     image: "/lovable-uploads/6858bebe-8b28-4358-aebc-18b3248538cb.png"
@@ -13,7 +13,7 @@ const workers = [
   {
     name: "Kelly",
     role: "AI Customer Support",
-    description: "I take inbound calls from your customers, answer their questions, handle conversations naturally in multiple languages - 24/7 on autopilot.",
+    description: "I take inbound calls from your customers, answer their questions, handle conversations naturally in multiple languages - 24/7.",
     icon: HeartHandshake,
     phoneNumber: "14153198525",
     image: "/lovable-uploads/5a92af00-06e1-4449-a871-95ed6c064182.png"
