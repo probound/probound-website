@@ -1,4 +1,4 @@
-import { Bot, HeartHandshake, PhoneCall } from "lucide-react";
+import { Bot, HeartHandshake, PhoneCall, Briefcase } from "lucide-react";
 import { Button } from "./ui/button";
 
 const workers = [
@@ -31,27 +31,37 @@ export const DigitalWorkers = () => {
                 <img 
                   src={worker.image} 
                   alt={worker.name}
-                  className={`object-cover w-full h-full ${worker.name === 'James' ? 'scale-125 object-top' : 'scale-125 object-top'}`}
+                  className="object-cover w-full h-full scale-125 object-top"
                 />
-                <div className="absolute bottom-4 left-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm">
-                  {worker.name} - {worker.role}
-                </div>
               </div>
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold">{worker.name}</h3>
                 <p className="text-gray-600">{worker.description}</p>
 
-                <Button 
-                  size="lg"
-                  className="w-full"
-                  asChild
-                >
-                  <a href={`tel:${worker.phoneNumber}`} className="flex items-center gap-2">
-                    <PhoneCall className="w-4 h-4" />
-                    Speak with {worker.name}
-                  </a>
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button 
+                    size="lg"
+                    className="w-full sm:w-auto hover:bg-[#9b87f5]"
+                    asChild
+                  >
+                    <a href={`tel:${worker.phoneNumber}`} className="flex items-center gap-2">
+                      <PhoneCall className="w-4 h-4" />
+                      Speak with {worker.name}
+                    </a>
+                  </Button>
+                  <Button 
+                    size="lg"
+                    variant="outline"
+                    className="w-full sm:w-auto hover:bg-[#9b87f5] hover:text-white"
+                    asChild
+                  >
+                    <a href="mailto:founders@probound.ai" className="flex items-center gap-2">
+                      <Briefcase className="w-4 h-4" />
+                      Hire Me
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           ))}

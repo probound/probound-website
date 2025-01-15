@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { PhoneCall, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 export const CTA = () => {
   return (
@@ -15,7 +15,7 @@ export const CTA = () => {
               Ready to Experience the Future of Work?
             </h2>
             <p className="text-lg text-primary-100 mb-10 max-w-2xl mx-auto">
-              Join thousands of businesses already leveraging our AI digital workers to streamline operations and boost growth.
+              Leverage our AI digital workers to streamline operations and boost growth today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" variant="secondary" className="bg-white text-primary-600 hover:bg-primary-50 text-lg px-8">

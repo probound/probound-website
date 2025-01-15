@@ -10,11 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
           <div className="md:col-span-2">
             <div className="flex items-start mb-4">
-              <img 
-                src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" 
-                alt="ProBound" 
-                className="h-32 w-auto object-contain brightness-0 invert contrast-125" 
-              />
+              <h1 className="text-3xl font-bold">probound</h1>
             </div>
             <p className="text-gray-400 text-sm">AI Digital Workers for Sales and Customer Support</p>
             

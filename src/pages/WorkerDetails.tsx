@@ -82,9 +82,11 @@ const WorkerDetails = () => {
                     Speak with {worker.name}
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg hover:bg-[#9b87f5] hover:text-white">
-                  <Briefcase className="w-5 h-5 mr-2" />
-                  Hire Me
+                <Button size="lg" variant="outline" className="text-lg hover:bg-[#9b87f5] hover:text-white" asChild>
+                  <a href="mailto:founders@probound.ai" className="flex items-center gap-2">
+                    <Briefcase className="w-5 h-5" />
+                    Hire Me
+                  </a>
                 </Button>
               </div>
             </div>
@@ -95,10 +97,6 @@ const WorkerDetails = () => {
                   alt={worker.name}
                   className="object-cover w-full h-full scale-125 object-top"
                 />
-                <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-sm text-white px-6 py-4 rounded-2xl">
-                  <div className="text-sm opacity-80">Now talking to</div>
-                  <div className="text-lg font-medium">{worker.name} - {worker.role}</div>
-                </div>
               </div>
             </div>
           </div>
