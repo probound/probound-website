@@ -56,7 +56,7 @@ export const Navigation = () => {
 
           <div className="flex items-center gap-4">
             <Button asChild>
-              <a href="mailto:founders@probound.ai">
+              <a href="https://cal.com/kemiprobound/ai">
                 Schedule Demo
               </a>
             </Button>

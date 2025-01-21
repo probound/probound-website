@@ -32,7 +32,7 @@ export const Hero = () => {
               </a>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8" asChild>
-              <a href="mailto:founders@probound.ai">Schedule Demo</a>
+              <a href="https://cal.com/kemiprobound/ai">Schedule Demo</a>
             </Button>
           </div>
         </div>

@@ -56,7 +56,7 @@ export const DigitalWorkers = () => {
                     className="w-full sm:w-auto hover:bg-gray-600 hover:text-white"
                     asChild
                   >
-                    <a href="mailto:founders@probound.ai" className="flex items-center gap-2">
+                    <a href="https://cal.com/kemiprobound/ai" className="flex items-center gap-2">
                       <Briefcase className="w-4 h-4" />
                       Hire Me
                     </a>
