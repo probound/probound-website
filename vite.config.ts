@@ -5,11 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   server: {
-    host: true, // Listen on all addresses
+    host: true,
     port: 8080,
-    strictPort: true, // Fail if port is already in use
+    strictPort: true,
   },
-  base: "", // Use relative paths
+  base: "/",
   plugins: [
     react(),
     mode === 'development' &&
@@ -20,4 +20,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: true
+  }
 }));
