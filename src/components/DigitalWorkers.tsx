@@ -42,7 +42,7 @@ export const DigitalWorkers = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button 
                     size="lg"
-                    className="w-full sm:w-auto hover:bg-[#9b87f5]"
+                    className="w-full sm:w-auto hover:bg-gray-600"
                     asChild
                   >
                     <a href={`tel:${worker.phoneNumber}`} className="flex items-center gap-2">
@@ -53,7 +53,7 @@ export const DigitalWorkers = () => {
                   <Button 
                     size="lg"
                     variant="outline"
-                    className="w-full sm:w-auto hover:bg-[#9b87f5] hover:text-white"
+                    className="w-full sm:w-auto hover:bg-gray-600 hover:text-white"
                     asChild
                   >
                     <a href="mailto:founders@probound.ai" className="flex items-center gap-2">
