@@ -9,7 +9,7 @@ const workers = {
     name: "Kelly",
     greeting: "Hi, I'm Kelly.",
     role: "AI Customer Support",
-    description: "I take inbound calls from your customers, answer their questions, handle conversations naturally in multiple languages - 24/7.",
+    description: "I provide 24/7 multilingual support to your customers, answering their questions and handling conversations with ease.",
     features: [
       {
         title: "Track Your Market",
@@ -34,7 +34,7 @@ const workers = {
     name: "James",
     greeting: "Hi, I'm James.",
     role: "AI Sales Development Rep",
-    description: "I make outbound calls to your ideal customers, qualify your leads, and book them on your calendar - on autopilot.",
+    description: "I automate outreach pipeline to engage your ideal prospects, qualify, and seamlessly schedule meetings to convert them to customers - on autopilot.",
     features: [
       {
         title: "Track Your Market",
