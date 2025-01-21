@@ -29,6 +29,18 @@ const Company = () => {
           </div>
         </section>
 
+        {/* Core Value Proposition Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="container">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Core Value Proposition</h2>
+              <p className="text-lg leading-relaxed text-gray-700">
+                We are building business-friendly agentic platform that enables natural-sounding conversations between humans and machines. With one powerful AI platform, create LLM-powered AI agents that listen, think, and speak with the same intelligence and emotive quality that a person can and act in your business interest on auto-pilot.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Values Section */}
         <section className="py-20 bg-white">
           <div className="container">
