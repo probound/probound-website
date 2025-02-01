@@ -18,7 +18,7 @@ const Footer = () => {
                 <img 
                   src="/lovable-uploads/606fbc7c-68c5-486e-8ba4-ca136a131666.png" 
                   alt="LinkedIn" 
-                  className="w-8 h-8"
+                  className="w-8 h-8 brightness-0 invert"
                 />
               </Link>
             </div>
