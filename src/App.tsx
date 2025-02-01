@@ -9,14 +9,19 @@ import Company from "@/pages/Company";
 import UseCases from "@/pages/UseCases";
 import TermsOfService from "@/pages/TermsOfService";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <BrowserRouter>
-        <Toaster />
-        <Sonner />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/workers/:workerId" element={<WorkerDetails />} />
@@ -25,6 +30,8 @@ const App = () => (
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <Toaster />
+        <Sonner />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
