@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Linkedin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,8 +14,12 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">AI Digital Workers for Sales and Customer Support</p>
             
             <div className="flex gap-4 mt-6">
-              <Link to="https://www.linkedin.com/company/proboundai/" className="bg-[#1A1A1A] p-2 rounded-full hover:bg-[#9b87f5]">
-                <Linkedin className="w-5 h-5" />
+              <Link to="https://www.linkedin.com/company/proboundai/" className="hover:opacity-80 transition-opacity">
+                <img 
+                  src="/lovable-uploads/4769ddb5-70f1-48b9-9ca2-2d941083c8bc.png" 
+                  alt="LinkedIn" 
+                  className="w-8 h-8"
+                />
               </Link>
             </div>
           </div>
