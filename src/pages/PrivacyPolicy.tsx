@@ -49,12 +49,6 @@ const PrivacyPolicy = () => {
                 Email: <a href="mailto:security@probound.ai" className="text-primary hover:underline">security@probound.ai</a>
               </address>
             </section>
-
-            <div className="mt-8 p-4 bg-gray-100 rounded-lg">
-              <p className="text-sm text-gray-600">
-                <strong>Important Notice:</strong> This Privacy Policy is intended as a starting point and must be tailored to meet the specific legal, technical, and operational requirements of ProBound. It is recommended that you review this policy with legal counsel to ensure its completeness and compliance with applicable laws.
-              </p>
-            </div>
           </div>
         </article>
       </main>
