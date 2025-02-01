@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="flex gap-4 mt-6">
               <Link to="https://www.linkedin.com/company/proboundai/" className="hover:opacity-80 transition-opacity">
                 <img 
-                  src="/lovable-uploads/4769ddb5-70f1-48b9-9ca2-2d941083c8bc.png" 
+                  src="/lovable-uploads/606fbc7c-68c5-486e-8ba4-ca136a131666.png" 
                   alt="LinkedIn" 
                   className="w-8 h-8"
                 />
