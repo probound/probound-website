@@ -9,6 +9,7 @@ import Company from "@/pages/Company";
 import UseCases from "@/pages/UseCases";
 import TermsOfService from "@/pages/TermsOfService";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import AcceptableUsePolicy from "@/pages/AcceptableUsePolicy";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/use-cases" element={<UseCases />} />
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/acceptable-use" element={<AcceptableUsePolicy />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Toaster />
