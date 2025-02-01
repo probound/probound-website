@@ -5,6 +5,7 @@ import { Features } from "@/components/Features";
 import { Partners } from "@/components/Partners";
 import { CTA } from "@/components/CTA";
 import Footer from "@/components/Footer";
+import { NewsletterPopup } from "@/components/NewsletterPopup";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Features />
       <CTA />
       <Footer />
+      <NewsletterPopup />
     </div>
   );
 };
