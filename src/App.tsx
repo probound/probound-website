@@ -7,6 +7,7 @@ import Index from "@/pages/index";
 import WorkerDetails from "@/pages/WorkerDetails";
 import Company from "@/pages/Company";
 import UseCases from "@/pages/UseCases";
+import TermsOfService from "@/pages/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/workers/:workerId" element={<WorkerDetails />} />
           <Route path="/company" element={<Company />} />
           <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/terms" element={<TermsOfService />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
