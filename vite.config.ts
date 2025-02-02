@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     strictPort: true,
   },
-  base: "/",
+  base: "./",
   plugins: [
     react(),
     mode === 'development' &&
@@ -22,6 +22,8 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: true,
+    assetsDir: 'assets',
+    emptyOutDir: true
   }
 }));
