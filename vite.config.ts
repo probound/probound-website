@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     strictPort: true,
   },
-  base: '/',
+  base: mode === 'development' ? '/' : './',
   plugins: [
     react(),
   ].filter(Boolean),
