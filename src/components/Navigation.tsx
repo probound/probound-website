@@ -16,7 +16,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-24 px-4">
           <Link to="/" className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" 
+              src="/lovable-uploads/54765c76-6414-43b2-abc2-50eb205803b0.png" 
               alt="ProBound" 
               className="h-36 w-auto object-contain brightness-100 contrast-125" 
             />
