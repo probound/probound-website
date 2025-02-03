@@ -8,12 +8,9 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useToast } from "@/components/ui/use-toast";
 
 export const NewsletterPopup = () => {
   const [open, setOpen] = useState(false);
-  const [email, setEmail] = useState("");
-  const { toast } = useToast();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -25,13 +22,8 @@ export const NewsletterPopup = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle newsletter signup
-    toast({
-      title: "Success!",
-      description: "Thank you for subscribing to our newsletter!",
-    });
+  const handleSubscribe = () => {
+    window.location.href = "https://probound-ai-newsletter.beehiiv.com/subscribe";
     setOpen(false);
     localStorage.setItem("newsletter-popup-shown", "true");
   };
@@ -45,18 +37,11 @@ export const NewsletterPopup = () => {
             Subscribe to our newsletter to receive the latest updates and news about ProBound.
           </DialogDescription>
         </DialogHeader>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <Input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <Button type="submit" className="w-full">
-            Subscribe
+        <div className="space-y-4">
+          <Button onClick={handleSubscribe} className="w-full">
+            Subscribe to Newsletter
           </Button>
-        </form>
+        </div>
       </DialogContent>
     </Dialog>
   );
