@@ -36,7 +36,7 @@ const Receptionists = () => {
             <div className="relative">
               <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/lovable-uploads/4769ddb5-70f1-48b9-9ca2-2d941083c8bc.png"
+                  src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png"
                   alt="AI Receptionist"
                   className="object-cover w-full h-full"
                 />
