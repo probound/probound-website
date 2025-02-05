@@ -44,18 +44,18 @@ export const Hero = () => {
             {/* Step 1 */}
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <div className="text-5xl font-bold text-primary-500 mb-4">01</div>
-              <h3 className="text-2xl font-semibold mb-4">Build</h3>
+              <h3 className="text-2xl font-semibold mb-4">Hire</h3>
               <p className="text-gray-600">
-                Utilize the voice AI API and our intuitive agent builder to create custom voice AI agents effortlessly.
+                Choose the AI Agent you want to hire.
               </p>
             </div>
 
             {/* Step 2 */}
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <div className="text-5xl font-bold text-primary-500 mb-4">02</div>
-              <h3 className="text-2xl font-semibold mb-4">Test</h3>
+              <h3 className="text-2xl font-semibold mb-4">Customize</h3>
               <p className="text-gray-600">
-                Perform comprehensive agent testing with built-in test LLM features to ensure seamless handling of edge cases.
+                Configure the agent with your business information to represent you.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ export const Hero = () => {
               <div className="text-5xl font-bold text-primary-500 mb-4">03</div>
               <h3 className="text-2xl font-semibold mb-4">Deploy</h3>
               <p className="text-gray-600">
-                Easily deploy your agents to phone calls, web calls, SMS, and more.
+                Easily launch your agents to start make or take phone calls.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export const Hero = () => {
               <div className="text-5xl font-bold text-primary-500 mb-4">04</div>
               <h3 className="text-2xl font-semibold mb-4">Monitor</h3>
               <p className="text-gray-600">
-                Track success rates, latency, and user sentiment through call history dashboard. Quickly identify failed calls.
+                Track calls, conversion rates, and more through our analytics dashboard.
               </p>
             </div>
           </div>
