@@ -3,9 +3,9 @@ import { PhoneCall, Sparkles } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white pt-32 pb-24">
+    <div className="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white">
       <div className="container relative z-10">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-4xl text-center pt-32 pb-8">
           <div className="mb-8 flex justify-center">
             <div className="relative rounded-full px-4 py-1.5 text-sm leading-6 text-primary-900 ring-1 ring-primary-900/10 hover:ring-primary-900/20 bg-white/80 backdrop-blur-sm">
               <span className="flex items-center gap-2">
@@ -28,12 +28,54 @@ export const Hero = () => {
             <Button size="lg" className="group text-lg px-8" asChild>
               <a href="tel:14153198525" className="flex items-center gap-2">
                 <PhoneCall className="w-4 h-4" />
-                Speak with Kelly
+                Contact Us
               </a>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8" asChild>
               <a href="https://cal.com/kemiprobound/ai">Schedule Demo</a>
             </Button>
+          </div>
+        </div>
+
+        {/* How It Works Section */}
+        <div className="py-24">
+          <h2 className="text-4xl font-bold text-center mb-16">How It Works</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Step 1 */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="text-5xl font-bold text-primary-500 mb-4">01</div>
+              <h3 className="text-2xl font-semibold mb-4">Build</h3>
+              <p className="text-gray-600">
+                Utilize the voice AI API and our intuitive agent builder to create custom voice AI agents effortlessly.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="text-5xl font-bold text-primary-500 mb-4">02</div>
+              <h3 className="text-2xl font-semibold mb-4">Test</h3>
+              <p className="text-gray-600">
+                Perform comprehensive agent testing with built-in test LLM features to ensure seamless handling of edge cases.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="text-5xl font-bold text-primary-500 mb-4">03</div>
+              <h3 className="text-2xl font-semibold mb-4">Deploy</h3>
+              <p className="text-gray-600">
+                Easily deploy your agents to phone calls, web calls, SMS, and more.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="bg-white rounded-xl p-8 shadow-sm">
+              <div className="text-5xl font-bold text-primary-500 mb-4">04</div>
+              <h3 className="text-2xl font-semibold mb-4">Monitor</h3>
+              <p className="text-gray-600">
+                Track success rates, latency, and user sentiment through call history dashboard. Quickly identify failed calls.
+              </p>
+            </div>
           </div>
         </div>
       </div>
