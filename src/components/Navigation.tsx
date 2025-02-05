@@ -38,6 +38,38 @@ export const Navigation = () => {
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="hover:text-primary">Use Cases</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-48 bg-white p-2">
+                      <Link 
+                        to="/use-cases/lead-qualification" 
+                        className="block px-4 py-2 text-sm text-gray-700 hover:text-primary rounded-md"
+                      >
+                        Lead Qualification
+                      </Link>
+                      <Link 
+                        to="/use-cases/customer-support" 
+                        className="block px-4 py-2 text-sm text-gray-700 hover:text-primary rounded-md"
+                      >
+                        Customer Support
+                      </Link>
+                      <Link 
+                        to="/use-cases/receptionists" 
+                        className="block px-4 py-2 text-sm text-gray-700 hover:text-primary rounded-md"
+                      >
+                        Receptionists
+                      </Link>
+                      <Link 
+                        to="/use-cases/dispatch-service" 
+                        className="block px-4 py-2 text-sm text-gray-700 hover:text-primary rounded-md"
+                      >
+                        Dispatch Service
+                      </Link>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
             <Link to="/company" className="text-gray-600 hover:text-primary">

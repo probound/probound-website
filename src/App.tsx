@@ -10,6 +10,10 @@ import UseCases from "@/pages/UseCases";
 import TermsOfService from "@/pages/TermsOfService";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import AcceptableUsePolicy from "@/pages/AcceptableUsePolicy";
+import LeadQualification from "@/pages/use-cases/LeadQualification";
+import CustomerSupport from "@/pages/use-cases/CustomerSupport";
+import Receptionists from "@/pages/use-cases/Receptionists";
+import DispatchService from "@/pages/use-cases/DispatchService";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -29,6 +33,10 @@ const App = () => (
           <Route path="/workers/:workerId" element={<WorkerDetails />} />
           <Route path="/company" element={<Company />} />
           <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/use-cases/lead-qualification" element={<LeadQualification />} />
+          <Route path="/use-cases/customer-support" element={<CustomerSupport />} />
+          <Route path="/use-cases/receptionists" element={<Receptionists />} />
+          <Route path="/use-cases/dispatch-service" element={<DispatchService />} />
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/acceptable-use" element={<AcceptableUsePolicy />} />
