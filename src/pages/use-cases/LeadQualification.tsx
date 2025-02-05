@@ -36,8 +36,8 @@ const LeadQualification = () => {
             <div className="relative">
               <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/lovable-uploads/e8a6e91e-ba64-4529-af94-9ce47f10afcb.png"
-                  alt="Lead Qualification"
+                  src="/lovable-uploads/287bb625-a46e-4145-97f6-a0ddb844ebd4.png"
+                  alt="Lead Qualification Professional"
                   className="object-cover w-full h-full"
                 />
               </div>
