@@ -36,8 +36,8 @@ const CustomerSupport = () => {
             <div className="relative">
               <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/lovable-uploads/5a92af00-06e1-4449-a871-95ed6c064182.png"
-                  alt="Customer Support"
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                  alt="Customer Support Representative"
                   className="object-cover w-full h-full"
                 />
               </div>
