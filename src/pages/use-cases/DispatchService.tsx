@@ -36,8 +36,8 @@ const DispatchService = () => {
             <div className="relative">
               <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/lovable-uploads/6858bebe-8b28-4358-aebc-18b3248538cb.png"
-                  alt="Dispatch Service"
+                  src="/lovable-uploads/93314768-0dde-4b76-9f23-53e93a49b62c.png"
+                  alt="Dispatch Service Professional"
                   className="object-cover w-full h-full"
                 />
               </div>
