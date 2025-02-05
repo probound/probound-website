@@ -35,12 +35,6 @@ export const Navigation = () => {
                       >
                         Kelly
                       </Link>
-                      <Link 
-                        to="/workers/james" 
-                        className="block px-4 py-2 text-sm text-gray-700 hover:text-primary rounded-md"
-                      >
-                        James
-                      </Link>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
