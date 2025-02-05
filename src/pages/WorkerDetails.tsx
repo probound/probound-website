@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -36,7 +36,10 @@ const WorkerDetails = () => {
   const { workerId } = useParams();
   const worker = workers[workerId as keyof typeof workers];
 
-  if (!worker) return null;
+  // Redirect to Kelly's page if worker doesn't exist
+  if (!worker) {
+    return <Navigate to="/workers/kelly" replace />;
+  }
 
   return (
     <div className="min-h-screen">
