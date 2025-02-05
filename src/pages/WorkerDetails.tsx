@@ -29,31 +29,6 @@ const workers = {
     ],
     image: "/lovable-uploads/5a92af00-06e1-4449-a871-95ed6c064182.png",
     phoneNumber: "14153198525"
-  },
-  james: {
-    name: "James",
-    greeting: "Hi, I'm James.",
-    role: "AI Sales Development Rep",
-    description: "I automate outreach pipeline to engage your ideal prospects, qualify, and seamlessly schedule meetings to convert them to customers - on autopilot.",
-    features: [
-      {
-        title: "Track Your Market",
-        description: "I conduct targeted outbound calls, identifying and engaging with potential customers in your market.",
-        icon: Target
-      },
-      {
-        title: "Engage Key Accounts",
-        description: "I maintain consistent follow-ups with key accounts, ensuring no opportunities slip through the cracks.",
-        icon: Users
-      },
-      {
-        title: "Generate Demand",
-        description: "Through natural phone conversations, I qualify leads and schedule demos for your sales team.",
-        icon: TrendingUp
-      }
-    ],
-    image: "/lovable-uploads/6858bebe-8b28-4358-aebc-18b3248538cb.png",
-    phoneNumber: "14153198525"
   }
 };
 

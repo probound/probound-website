@@ -1,15 +1,7 @@
-import { Bot, HeartHandshake, PhoneCall, Briefcase } from "lucide-react";
+import { HeartHandshake, PhoneCall, Briefcase } from "lucide-react";
 import { Button } from "./ui/button";
 
 const workers = [
-  {
-    name: "James",
-    role: "AI Sales Development Rep",
-    description: "I automate outreach pipeline to engage your ideal prospects, qualify, and seamlessly schedule meetings to convert them to customers - on autopilot.",
-    icon: Bot,
-    phoneNumber: "14153198525",
-    image: "/lovable-uploads/6858bebe-8b28-4358-aebc-18b3248538cb.png"
-  },
   {
     name: "Kelly",
     role: "AI Customer Support",
@@ -24,7 +16,7 @@ export const DigitalWorkers = () => {
   return (
     <section className="py-24">
       <div className="container max-w-7xl">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 gap-8">
           {workers.map((worker, index) => (
             <div key={worker.name} className="space-y-6">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
