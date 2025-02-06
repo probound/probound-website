@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { PhoneCall, Sparkles } from "lucide-react";
 
@@ -28,7 +29,7 @@ export const Hero = () => {
             <Button size="lg" className="group text-lg px-8" asChild>
               <a href="tel:14153198525" className="flex items-center gap-2">
                 <PhoneCall className="w-4 h-4" />
-                Contact Us
+                Speak with Kelly
               </a>
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8" asChild>
