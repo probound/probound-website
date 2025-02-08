@@ -81,11 +81,11 @@ export const Hero = () => {
         </div>
       </div>
       
-      {/* Abstract background shapes */}
+      {/* Optimized background shapes with reduced complexity */}
       <div className="absolute top-0 left-0 right-0 h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] rounded-full bg-gradient-to-r from-primary-100/40 to-primary-200/40 blur-3xl" />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-gradient-to-l from-primary-100/30 to-primary-200/30 blur-2xl" />
-        <div className="absolute bottom-0 left-0 w-[700px] h-[700px] rounded-full bg-gradient-to-t from-primary-100/30 to-primary-200/30 blur-2xl" />
+        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-r from-primary-100/30 to-primary-200/30 blur-2xl" />
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-gradient-to-l from-primary-100/20 to-primary-200/20 blur-xl" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-gradient-to-t from-primary-100/20 to-primary-200/20 blur-xl" />
       </div>
     </div>
   );
