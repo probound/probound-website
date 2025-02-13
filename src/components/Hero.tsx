@@ -11,19 +11,19 @@ export const Hero = () => {
             <div className="relative rounded-full px-4 py-1.5 text-sm leading-6 text-primary-900 ring-1 ring-primary-900/10 hover:ring-primary-900/20 bg-white/80 backdrop-blur-sm">
               <span className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-primary-500" />
-                probound.ai
+                Revolutionizing Business Communication
               </span>
             </div>
           </div>
           <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-            AI Digital Workers for
+            Intelligent Human-like
             <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400">
-              Sales & Customer Service
+              AI Digital Workers
             </span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-            Our advanced conversational AI excels in conducting full-length human-like phone calls, exhibiting perfect recall and infinite memory for sales and customer service operations.
+            Transform your business operations with our advanced AI digital workers. Experience seamless automation and human-like interactions that drive growth and efficiency.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" className="group text-lg px-8" asChild>
@@ -81,7 +81,7 @@ export const Hero = () => {
         </div>
       </div>
       
-      {/* Optimized background shapes */}
+      {/* Optimized background shapes with reduced complexity */}
       <div className="absolute top-0 left-0 right-0 h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-r from-primary-100/30 to-primary-200/30 blur-2xl" />
         <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-gradient-to-l from-primary-100/20 to-primary-200/20 blur-xl" />
