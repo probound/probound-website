@@ -15,10 +15,10 @@ export const Hero = () => {
             </div>
           </div>
           <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-            AI Voice Agents for
+            Intelligent Human-like
             <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400">
-              Sales & Customer Service
+              AI Voice Agents
             </span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
