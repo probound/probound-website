@@ -1,5 +1,7 @@
+
 import { Button } from "./ui/button";
 import { PhoneCall, Sparkles } from "lucide-react";
+import { lazy, Suspense } from "react";
 
 export const Hero = () => {
   return (
@@ -37,7 +39,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* How It Works Section */}
+        {/* How It Works Section - Loaded with simplified background */}
         <div className="py-24">
           <h2 className="text-4xl font-bold text-center mb-16">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -76,10 +78,12 @@ export const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute top-0 left-0 right-0 h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-r from-primary-100/30 to-primary-200/30 blur-2xl" />
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-gradient-to-l from-primary-100/20 to-primary-200/20 blur-xl" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-gradient-to-t from-primary-100/20 to-primary-200/20 blur-xl" />
+      {/* Simplified background elements with reduced complexity */}
+      <div 
+        className="absolute top-0 left-0 right-0 h-full overflow-hidden pointer-events-none"
+        aria-hidden="true"
+      >
+        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-r from-primary-100/20 to-primary-200/20 blur-2xl" />
       </div>
     </div>
   );

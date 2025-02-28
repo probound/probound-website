@@ -11,20 +11,21 @@
     <meta property="og:title" content="ProBound - AI Voice Agents" />
     <meta property="og:description" content="ProBound helps businesses never miss a call again with AI Voice Agents." />
     <meta property="og:image" content="/lovable-uploads/62c2e740-b577-4c6a-b78f-657c1c147ce3.png" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHMTT0RWP0"></script>
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <!-- Google tag (gtag.js) - deferred for non-blocking -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-HHMTT0RWP0"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-HHMTT0RWP0');
     </script>
   </head>
 
   <body>
     <div id="root"></div>
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module" defer></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
