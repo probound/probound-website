@@ -56,7 +56,7 @@ export const Hero = () => {
               <div className="text-sm text-foreground/70">Customer Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold gradient-text">60%</div>
+              <div className="text-2xl md:text-3xl font-bold gradient-text">61%</div>
               <div className="text-sm text-foreground/70">Cost Reduction</div>
             </div>
           </div>
