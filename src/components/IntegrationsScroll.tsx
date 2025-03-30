@@ -1,6 +1,5 @@
 
 import { useEffect, useRef } from "react";
-import { Calendar } from "lucide-react";
 
 const integrations = [
   {
@@ -8,13 +7,24 @@ const integrations = [
     logo: "/lovable-uploads/77282a53-323b-4514-bfb8-1f9b113c327e.png",
   },
   {
+    name: "n8n",
+    logo: "https://n8n.io/favicon.ico",
+  },
+  {
     name: "GoHighLevel",
     logo: "https://www.gohighlevel.com/favicon.ico",
   },
   {
-    name: "Google Calendar",
-    logo: null, // We'll use the Lucide icon instead
-    icon: Calendar,
+    name: "Twilio",
+    logo: "https://www.twilio.com/assets/icons/favicon.ico",
+  },
+  {
+    name: "Vonage",
+    logo: "https://www.vonage.com/favicon.ico",
+  },
+  {
+    name: "OpenAI",
+    logo: "https://openai.com/favicon.ico",
   },
   {
     name: "Salesforce",
@@ -23,6 +33,10 @@ const integrations = [
   {
     name: "HubSpot",
     logo: "https://www.hubspot.com/favicon.ico",
+  },
+  {
+    name: "Zapier",
+    logo: "https://zapier.com/favicon.ico",
   },
   {
     name: "Pipedrive",
@@ -99,20 +113,16 @@ export const IntegrationsScroll = () => {
                 className="integration-item flex-shrink-0 p-6 bg-background rounded-xl border border-border/40 hover:card-glow transition-all duration-300 min-w-[230px]"
               >
                 <div className="flex items-center justify-center h-16 mb-4">
-                  {integration.logo ? (
-                    <img 
-                      src={integration.logo} 
-                      alt={`${integration.name} logo`} 
-                      className="h-12 w-auto object-contain"
-                      onError={(e) => {
-                        // Fallback for images that fail to load
-                        const target = e.target as HTMLImageElement;
-                        target.src = "https://via.placeholder.com/100?text=" + integration.name;
-                      }}
-                    />
-                  ) : integration.icon ? (
-                    <integration.icon className="h-12 w-12 text-primary" />
-                  ) : null}
+                  <img 
+                    src={integration.logo} 
+                    alt={`${integration.name} logo`} 
+                    className="h-12 w-auto object-contain"
+                    onError={(e) => {
+                      // Fallback for images that fail to load
+                      const target = e.target as HTMLImageElement;
+                      target.src = "https://via.placeholder.com/100?text=" + integration.name;
+                    }}
+                  />
                 </div>
                 <p className="text-center font-semibold">{integration.name}</p>
               </div>
