@@ -1,3 +1,4 @@
+
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { DigitalWorkers } from "@/components/DigitalWorkers";
@@ -9,7 +10,7 @@ import { NewsletterPopup } from "@/components/NewsletterPopup";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       <Hero />
       <Partners />

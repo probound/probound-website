@@ -1,3 +1,4 @@
+
 import { BarChart3, Globe2, Rocket, Shield, Zap, Users, Brain, Clock } from "lucide-react";
 
 const features = [
@@ -45,31 +46,33 @@ const features = [
 
 export const Features = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container">
+    <section className="py-24 bg-background relative overflow-hidden">
+      <div className="bg-grid absolute inset-0 opacity-10"></div>
+      <div className="container relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
             Our Advantage
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
             Our platform combines cutting-edge AI with enterprise-grade features to deliver unmatched business value.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature) => (
             <div
               key={feature.name}
-              className="relative p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 group"
+              className="relative p-6 bg-secondary rounded-xl border border-border/40 hover:card-glow transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="mb-4 w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-primary-100 transition-colors">
-                <feature.icon className="w-6 h-6 text-primary-600" />
+              <div className="mb-4 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                <feature.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.name}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-lg font-semibold mb-2">{feature.name}</h3>
+              <p className="text-foreground/70">{feature.description}</p>
             </div>
           ))}
         </div>
       </div>
+      <div className="absolute -bottom-1/2 right-0 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl"></div>
     </section>
   );
 };

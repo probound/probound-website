@@ -1,17 +1,18 @@
+
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-white py-16">
+    <footer className="bg-background border-t border-border/40 py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
           <div className="md:col-span-2">
             <div className="flex items-start mb-4">
-              <h1 className="text-3xl font-bold">probound</h1>
+              <h1 className="text-3xl font-bold gradient-text">probound</h1>
             </div>
-            <p className="text-gray-400 text-sm">AI Digital Workers for Sales and Customer Support</p>
+            <p className="text-foreground/70 text-sm">AI Digital Workers for Sales and Customer Support</p>
             
             <div className="flex gap-4 mt-6">
               <Link to="https://www.linkedin.com/company/proboundai/" className="hover:opacity-80 transition-opacity">
@@ -27,22 +28,22 @@ const Footer = () => {
           <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-bold mb-6">Contact</h3>
-              <a href="mailto:founders@probound.ai" className="text-gray-400 hover:text-[#9b87f5]">founders@probound.ai</a>
+              <a href="mailto:founders@probound.ai" className="text-foreground/70 hover:text-primary">founders@probound.ai</a>
             </div>
             
             <div className="space-y-4">
               <h3 className="text-xl font-bold mb-6">Legal</h3>
               <div className="flex flex-col space-y-2">
-                <Link to="/privacy" className="text-gray-400 hover:text-[#9b87f5]">Privacy Policy</Link>
-                <Link to="/acceptable-use" className="text-gray-400 hover:text-[#9b87f5]">Acceptable Use Policy</Link>
-                <Link to="/terms" className="text-gray-400 hover:text-[#9b87f5]">Terms of Service</Link>
+                <Link to="/privacy" className="text-foreground/70 hover:text-primary">Privacy Policy</Link>
+                <Link to="/acceptable-use" className="text-foreground/70 hover:text-primary">Acceptable Use Policy</Link>
+                <Link to="/terms" className="text-foreground/70 hover:text-primary">Terms of Service</Link>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-border/40 pt-8">
+          <p className="text-foreground/50 text-sm">
             © {currentYear} probound. All rights reserved.
           </p>
         </div>
