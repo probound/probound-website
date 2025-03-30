@@ -1,90 +1,76 @@
 
 import { Button } from "./ui/button";
-import { PhoneCall, Sparkles } from "lucide-react";
-import { lazy, Suspense } from "react";
+import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-primary-50 to-white">
-      <div className="container relative z-10">
-        <div className="mx-auto max-w-4xl text-center pt-32 pb-8">
-          <div className="mb-8 flex justify-center">
-            <div className="relative rounded-full px-4 py-1.5 text-sm leading-6 text-primary-900 ring-1 ring-primary-900/10 hover:ring-primary-900/20 bg-white/80 backdrop-blur-sm">
-              <span className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-primary-500" />
-                probound.ai
-              </span>
-            </div>
-          </div>
-          <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-            Intelligent Human-like
+    <div className="relative overflow-hidden bg-[#020617] min-h-screen flex flex-col">
+      {/* Background elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+        <div className="absolute -left-1/4 top-1/3 w-[500px] h-[500px] rounded-full bg-teal-500/10 blur-[100px]" />
+        <div className="absolute -right-1/4 bottom-1/3 w-[500px] h-[500px] rounded-full bg-indigo-500/10 blur-[100px]" />
+        <div className="absolute top-0 left-0 w-full h-full bg-[#020617]/50 backdrop-blur-[1px] pointer-events-none" />
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#020617] pointer-events-none" />
+      </div>
+
+      {/* Main content */}
+      <div className="container relative z-10 flex-grow flex flex-col justify-center pt-32 pb-24">
+        <div className="mx-auto max-w-5xl text-center">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4">
+            Supercharge your Growth 
             <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-400">
-              AI Voice Agents
+            <span className="bg-gradient-to-r from-teal-300 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+              with AI Agents
             </span>
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
-            Never miss a call again with our advanced AI Voice Agents that conduct full-length human-like phone calls with perfect recall and infinite memory.
+          <p className="mt-6 text-lg leading-8 text-gray-300 max-w-3xl mx-auto">
+            Taalk AI Agents empower your business to create meaningful customer engagements
+            <br />
+            across Voice Calls and Text Messages that drive <span className="text-gray-100">Measurable Performance</span>.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button size="lg" className="group text-lg px-8" asChild>
-              <a href="tel:14153198525" className="flex items-center gap-2">
-                <PhoneCall className="w-4 h-4" />
-                Speak with Kelly
+            <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-medium px-8 py-6 text-base" asChild>
+              <a href="tel:14153198525">
+                Taalk to an AI Agent now
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8" asChild>
-              <a href="https://cal.com/kemiprobound/ai">Schedule Demo</a>
+            <Button variant="outline" size="lg" className="text-white border-gray-500 hover:bg-gray-800 rounded-full px-8 py-6 text-base" asChild>
+              <a href="https://cal.com/kemiprobound/ai" className="flex items-center gap-2">
+                How we do it
+              </a>
             </Button>
           </div>
         </div>
+      </div>
 
-        {/* How It Works Section - Loaded with simplified background */}
-        <div className="py-24">
-          <h2 className="text-4xl font-bold text-center mb-16">How It Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="text-5xl font-bold text-primary-500 mb-4">01</div>
-              <h3 className="text-2xl font-semibold mb-4">Hire</h3>
-              <p className="text-gray-600">
-                Choose the AI Agent you want to hire.
-              </p>
+      {/* Stats section */}
+      <div className="relative z-10 container pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 text-center">
+          <div className="border-r border-gray-700 last:border-none">
+            <div className="bg-gradient-to-r from-teal-300 via-blue-500 to-indigo-500 bg-clip-text text-transparent text-5xl md:text-6xl lg:text-7xl font-bold">
+              600,000+
             </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="text-5xl font-bold text-primary-500 mb-4">02</div>
-              <h3 className="text-2xl font-semibold mb-4">Customize</h3>
-              <p className="text-gray-600">
-                Configure the agent with your business information to represent you.
-              </p>
+            <p className="text-gray-400 mt-2">Dials Per Hour</p>
+          </div>
+          
+          <div className="border-r border-gray-700 last:border-none">
+            <div className="bg-gradient-to-r from-teal-300 via-blue-500 to-indigo-500 bg-clip-text text-transparent text-5xl md:text-6xl lg:text-7xl font-bold">
+              300,000+
             </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="text-5xl font-bold text-primary-500 mb-4">03</div>
-              <h3 className="text-2xl font-semibold mb-4">Deploy</h3>
-              <p className="text-gray-600">
-                Easily launch your agents to start make or take phone calls.
-              </p>
+            <p className="text-gray-400 mt-2">Text Messages Per Day</p>
+          </div>
+          
+          <div>
+            <div className="bg-gradient-to-r from-teal-300 via-blue-500 to-indigo-500 bg-clip-text text-transparent text-5xl md:text-6xl lg:text-7xl font-bold">
+              2 Million
             </div>
-
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <div className="text-5xl font-bold text-primary-500 mb-4">04</div>
-              <h3 className="text-2xl font-semibold mb-4">Monitor</h3>
-              <p className="text-gray-600">
-                Track calls, conversion rates, and more through our analytics dashboard.
-              </p>
-            </div>
+            <p className="text-gray-400 mt-2">Emails Per Month</p>
           </div>
         </div>
       </div>
       
-      {/* Simplified background elements with reduced complexity */}
-      <div 
-        className="absolute top-0 left-0 right-0 h-full overflow-hidden pointer-events-none"
-        aria-hidden="true"
-      >
-        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-r from-primary-100/20 to-primary-200/20 blur-2xl" />
-      </div>
+      {/* Dot pattern overlay */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxLjUiIGN5PSIxLjUiIHI9IjEuNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvZz48L3N2Zz4=')] pointer-events-none opacity-50 z-0"></div>
     </div>
   );
 };
