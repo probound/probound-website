@@ -1,4 +1,3 @@
-
 import { BarChart3, Globe2, Rocket, Shield, Zap, Users, Brain, Clock } from "lucide-react";
 
 const features = [
@@ -46,7 +45,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
@@ -57,15 +56,15 @@ export const Features = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <div
               key={feature.name}
-              className="relative p-8 bg-white rounded-2xl border border-gray-100 hover:border-primary-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 group"
+              className="relative p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 group"
             >
-              <div className="mb-6 w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-primary-100 transition-colors">
+              <div className="mb-4 w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center group-hover:bg-primary-100 transition-colors">
                 <feature.icon className="w-6 h-6 text-primary-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.name}</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.name}</h3>
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
