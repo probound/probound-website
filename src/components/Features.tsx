@@ -61,7 +61,7 @@ export const Features = () => {
           {features.map((feature) => (
             <div
               key={feature.name}
-              className="relative p-6 bg-secondary rounded-xl border border-border/40 hover:card-glow transition-all duration-300 hover:-translate-y-1"
+              className="relative p-6 bg-secondary/10 rounded-xl border border-border/40 hover:card-glow transition-all duration-300 hover:-translate-y-1"
             >
               <div className="mb-4 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                 <feature.icon className="w-6 h-6 text-primary" />

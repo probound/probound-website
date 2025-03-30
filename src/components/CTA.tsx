@@ -7,7 +7,7 @@ export const CTA = () => {
     <section className="relative py-24 overflow-hidden bg-background">
       <div className="bg-grid absolute inset-0 opacity-5"></div>
       <div className="container relative z-10">
-        <div className="bg-secondary/80 rounded-2xl px-8 py-16 md:p-16 relative overflow-hidden border border-border/40">
+        <div className="bg-background rounded-2xl px-8 py-16 md:p-16 relative overflow-hidden border border-border/40">
           <div className="relative z-10 mx-auto max-w-4xl text-center">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-primary/20 rounded-full text-sm text-primary bg-primary/5 mb-8">
               <Sparkles className="w-4 h-4" />

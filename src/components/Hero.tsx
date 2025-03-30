@@ -66,7 +66,7 @@ export const Hero = () => {
         <div className="py-24">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-secondary rounded-xl p-8 border border-border/40 hover:card-glow transition-all">
+            <div className="bg-secondary/10 rounded-xl p-8 border border-border/40 hover:card-glow transition-all">
               <div className="text-5xl font-bold gradient-text mb-4">01</div>
               <h3 className="text-2xl font-semibold mb-4">Hire</h3>
               <p className="text-foreground/70">
@@ -74,7 +74,7 @@ export const Hero = () => {
               </p>
             </div>
 
-            <div className="bg-secondary rounded-xl p-8 border border-border/40 hover:card-glow transition-all">
+            <div className="bg-secondary/10 rounded-xl p-8 border border-border/40 hover:card-glow transition-all">
               <div className="text-5xl font-bold gradient-text mb-4">02</div>
               <h3 className="text-2xl font-semibold mb-4">Customize</h3>
               <p className="text-foreground/70">
@@ -82,7 +82,7 @@ export const Hero = () => {
               </p>
             </div>
 
-            <div className="bg-secondary rounded-xl p-8 border border-border/40 hover:card-glow transition-all">
+            <div className="bg-secondary/10 rounded-xl p-8 border border-border/40 hover:card-glow transition-all">
               <div className="text-5xl font-bold gradient-text mb-4">03</div>
               <h3 className="text-2xl font-semibold mb-4">Deploy</h3>
               <p className="text-foreground/70">
@@ -90,7 +90,7 @@ export const Hero = () => {
               </p>
             </div>
 
-            <div className="bg-secondary rounded-xl p-8 border border-border/40 hover:card-glow transition-all">
+            <div className="bg-secondary/10 rounded-xl p-8 border border-border/40 hover:card-glow transition-all">
               <div className="text-5xl font-bold gradient-text mb-4">04</div>
               <h3 className="text-2xl font-semibold mb-4">Monitor</h3>
               <p className="text-foreground/70">
