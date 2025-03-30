@@ -19,7 +19,8 @@ export const Navigation = () => {
             <img 
               src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" 
               alt="ProBound" 
-              className="h-10 w-auto object-contain brightness-0 invert" 
+              className="h-30 w-auto object-contain brightness-0 invert" 
+              style={{ height: "30px" }} // 3x the original size (10px to 30px)
             />
           </Link>
           
@@ -70,6 +71,12 @@ export const Navigation = () => {
                       </Link>
                     </div>
                   </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <Link to="/integrations" className="text-foreground/80 hover:text-primary flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                    Integrations
+                  </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>

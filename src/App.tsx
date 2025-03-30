@@ -13,6 +13,7 @@ import Index from "@/pages/index";
 const WorkerDetails = lazy(() => import("@/pages/WorkerDetails"));
 const Company = lazy(() => import("@/pages/Company"));
 const UseCases = lazy(() => import("@/pages/UseCases"));
+const Integrations = lazy(() => import("@/pages/Integrations"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const AcceptableUsePolicy = lazy(() => import("@/pages/AcceptableUsePolicy"));
@@ -54,6 +55,11 @@ const App = () => (
           <Route path="/company" element={
             <Suspense fallback={<PageLoading />}>
               <Company />
+            </Suspense>
+          } />
+          <Route path="/integrations" element={
+            <Suspense fallback={<PageLoading />}>
+              <Integrations />
             </Suspense>
           } />
           <Route path="/use-cases" element={
