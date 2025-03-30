@@ -17,10 +17,10 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-20 px-4">
           <Link to="/" className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/c2a29b08-767a-471b-bd1c-f7cb4e0856ee.png" 
+              src="/lovable-uploads/f71772bf-2889-40ba-aff5-99a078681e0a.png" 
               alt="ProBound" 
-              className="h-30 w-auto object-contain brightness-0 invert" 
-              style={{ height: "30px" }} // 3x the original size (10px to 30px)
+              className="h-30 w-auto object-contain" 
+              style={{ height: "30px" }}
             />
           </Link>
           
