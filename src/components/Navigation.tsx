@@ -19,8 +19,8 @@ export const Navigation = () => {
             <img 
               src="/lovable-uploads/f71772bf-2889-40ba-aff5-99a078681e0a.png" 
               alt="ProBound" 
-              className="h-120 w-auto object-contain" 
-              style={{ height: "120px" }}
+              className="h-180 w-auto object-contain" 
+              style={{ height: "180px" }}
             />
           </Link>
           
