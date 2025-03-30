@@ -7,6 +7,7 @@ import { Partners } from "@/components/Partners";
 import { CTA } from "@/components/CTA";
 import Footer from "@/components/Footer";
 import { NewsletterPopup } from "@/components/NewsletterPopup";
+import { IntegrationsScroll } from "@/components/IntegrationsScroll";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Partners />
       <DigitalWorkers />
       <Features />
+      <IntegrationsScroll />
       <CTA />
       <Footer />
       <NewsletterPopup />
