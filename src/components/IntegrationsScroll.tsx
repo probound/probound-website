@@ -3,20 +3,12 @@ import { useEffect, useRef } from "react";
 
 const integrations = [
   {
-    name: "Cal.com",
-    logo: "/lovable-uploads/77282a53-323b-4514-bfb8-1f9b113c327e.png",
-  },
-  {
     name: "Google Calendar",
     logo: "https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_19_2x.png",
   },
   {
     name: "Calendly",
-    logo: "https://assets.calendly.com/assets/favicon/apple-touch-icon-76x76-e074231e28a18247540fc78409aee7fe67c7fb5771a284e03a15f98142519332.png",
-  },
-  {
-    name: "GoHighLevel",
-    logo: "https://www.gohighlevel.com/favicon.ico",
+    logo: "/lovable-uploads/a62a80fa-f796-44b4-b837-148a19e63db2.png",
   },
   {
     name: "Salesforce",
