@@ -7,24 +7,16 @@ const integrations = [
     logo: "/lovable-uploads/77282a53-323b-4514-bfb8-1f9b113c327e.png",
   },
   {
-    name: "n8n",
-    logo: "https://n8n.io/favicon.ico",
+    name: "Google Calendar",
+    logo: "https://ssl.gstatic.com/calendar/images/dynamiclogo_2020q4/calendar_19_2x.png",
+  },
+  {
+    name: "Calendly",
+    logo: "https://assets.calendly.com/assets/favicon/apple-touch-icon-76x76-e074231e28a18247540fc78409aee7fe67c7fb5771a284e03a15f98142519332.png",
   },
   {
     name: "GoHighLevel",
     logo: "https://www.gohighlevel.com/favicon.ico",
-  },
-  {
-    name: "Twilio",
-    logo: "https://www.twilio.com/assets/icons/favicon.ico",
-  },
-  {
-    name: "Vonage",
-    logo: "https://www.vonage.com/favicon.ico",
-  },
-  {
-    name: "OpenAI",
-    logo: "https://openai.com/favicon.ico",
   },
   {
     name: "Salesforce",
@@ -33,10 +25,6 @@ const integrations = [
   {
     name: "HubSpot",
     logo: "https://www.hubspot.com/favicon.ico",
-  },
-  {
-    name: "Zapier",
-    logo: "https://zapier.com/favicon.ico",
   },
   {
     name: "Pipedrive",
