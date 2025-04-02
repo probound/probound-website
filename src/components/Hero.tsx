@@ -15,10 +15,10 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 max-w-4xl">
-            Intelligent Human-like
+            Turn Every Call into
             <br />
             <span className="gradient-text">
-              AI Voice Agents
+              An Opportunity
             </span>
           </h1>
           
