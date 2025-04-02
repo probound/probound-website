@@ -1,6 +1,5 @@
 
-import { ArrowLeft, ShieldCheck, Lock, Database, Cloud } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ShieldCheck, Lock, Database, Cloud } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
 import { Navigation } from "@/components/Navigation";
@@ -18,13 +17,6 @@ const Security = () => {
           <div className="bg-grid absolute inset-0 opacity-10"></div>
           <div className="container relative">
             <div className="max-w-3xl mx-auto text-center">
-              <Link 
-                to="/" 
-                className="inline-flex items-center gap-2 text-foreground/70 hover:text-primary transition-colors mb-8"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                Back to Home
-              </Link>
               <h1 className="text-5xl font-bold tracking-tight mb-6">
                 Security at
                 <span className="gradient-text block mt-2">probound</span>
