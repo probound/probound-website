@@ -3,7 +3,7 @@ import { ArrowLeft, ShieldCheck, Lock, Database, Cloud } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
-import Navigation from "@/components/Navigation";
+import { Navigation } from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const Security = () => {
