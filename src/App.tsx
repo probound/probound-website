@@ -17,6 +17,7 @@ const Integrations = lazy(() => import("@/pages/Integrations"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const AcceptableUsePolicy = lazy(() => import("@/pages/AcceptableUsePolicy"));
+const Security = lazy(() => import("@/pages/Security"));
 const LeadQualification = lazy(() => import("@/pages/use-cases/LeadQualification"));
 const CustomerSupport = lazy(() => import("@/pages/use-cases/CustomerSupport"));
 const Receptionists = lazy(() => import("@/pages/use-cases/Receptionists"));
@@ -100,6 +101,11 @@ const App = () => (
           <Route path="/acceptable-use" element={
             <Suspense fallback={<PageLoading />}>
               <AcceptableUsePolicy />
+            </Suspense>
+          } />
+          <Route path="/security" element={
+            <Suspense fallback={<PageLoading />}>
+              <Security />
             </Suspense>
           } />
           <Route path="*" element={<Navigate to="/" replace />} />
