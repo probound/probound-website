@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             
             <div className="space-y-4">
-              <h3 className="text-xl font-bold mb-6">Legal</h3>
+              <h3 className="text-xl font-bold mb-6">Links</h3>
               <div className="flex flex-col space-y-2">
                 <Link to="/privacy" className="text-foreground/70 hover:text-primary">Privacy Policy</Link>
                 <Link to="/acceptable-use" className="text-foreground/70 hover:text-primary">Acceptable Use Policy</Link>
