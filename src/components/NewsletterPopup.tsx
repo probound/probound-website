@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import {
   Dialog,
@@ -17,7 +18,7 @@ export const NewsletterPopup = () => {
       if (!localStorage.getItem("newsletter-popup-shown")) {
         setOpen(true);
       }
-    }, 5000);
+    }, 60000); // Changed from 5000 to 60000 ms (60 seconds)
 
     return () => clearTimeout(timer);
   }, []);
