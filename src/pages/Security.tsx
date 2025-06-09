@@ -1,3 +1,4 @@
+
 import { ShieldCheck, Lock, Database, Cloud } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
@@ -76,7 +77,7 @@ const Security = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Secure Infrastructure</h3>
                 <p className="text-foreground/70">
-                  Our infrastructure is hosted in secure, SOC 2 Type 2 Certified data centers 
+                  Our infrastructure is hosted in secure data centers 
                   with 24/7 monitoring and advanced threat detection.
                 </p>
               </div>
@@ -108,7 +109,7 @@ const Security = () => {
                 <div className="p-6 rounded-2xl border border-border/40 bg-secondary/5 hover:border-primary/40 hover:card-glow transition-all duration-300">
                   <h3 className="text-xl font-semibold mb-4">Data Protection</h3>
                   <p className="text-foreground/70">
-                    We adhere to GDPR, CCPA, and other relevant data protection regulations 
+                    We adhere to relevant data protection regulations 
                     to ensure your customers' personal information is handled properly.
                   </p>
                 </div>
