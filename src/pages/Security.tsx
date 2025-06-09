@@ -1,4 +1,3 @@
-
 import { ShieldCheck, Lock, Database, Cloud } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,34 +28,6 @@ const Security = () => {
           <div className="absolute -bottom-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/5 blur-3xl"></div>
         </section>
         
-        {/* SOC 2 Type 2 Certification Section */}
-        <section className="py-20 relative">
-          <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">SOC 2 Type 2 Certified</h2>
-                <p className="text-lg leading-relaxed text-foreground/70 mb-6">
-                  At ProBound, security and trust are foundational values. We are proud to announce that we have completed 
-                  SOC 2 Type 2 audit, demonstrating our ongoing commitment to maintaining the highest standards of security 
-                  and operational excellence.
-                </p>
-                <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/5" asChild>
-                  <a href="mailto:founders@probound.ai" className="flex items-center gap-2">
-                    Learn More About Our Security
-                  </a>
-                </Button>
-              </div>
-              <div className="flex justify-center">
-                <img 
-                  src="/lovable-uploads/57eff940-c2d0-4a83-ab9c-9909498759d1.png" 
-                  alt="SOC 2 Type 2 Certification" 
-                  className="w-64 h-64 object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Security Overview */}
         <section className="py-20 bg-secondary/5">
           <div className="container">
