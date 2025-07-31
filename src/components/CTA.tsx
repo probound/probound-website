@@ -1,6 +1,6 @@
 
 import { Button } from "./ui/button";
-import { Rocket, ArrowRight, Calendar } from "lucide-react";
+import { Rocket, ArrowRight, PhoneCall } from "lucide-react";
 
 export const CTA = () => {
   return (
@@ -21,9 +21,9 @@ export const CTA = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" className="gradient-bg hover:opacity-90 text-lg px-8 py-6" asChild>
-                <a href="https://cal.com/kemiprobound/ai" className="flex items-center gap-2">
-                  <Calendar className="w-5 h-5" />
-                  Schedule Your Demo
+                <a href="tel:+14153198525" className="flex items-center gap-2">
+                  <PhoneCall className="w-5 h-5" />
+                  Speak with Kelly
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </Button>
