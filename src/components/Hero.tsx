@@ -1,8 +1,11 @@
 
+import { useState } from "react";
 import { Button } from "./ui/button";
+import { Dialog, DialogContent } from "./ui/dialog";
 import { PhoneCall, ChevronRight, Shield, Calendar, ArrowRight, Headphones } from "lucide-react";
 
 export const Hero = () => {
+  const [showVideoDialog, setShowVideoDialog] = useState(false);
   return (
     <div className="relative overflow-hidden bg-background pt-20">
       <div className="bg-grid absolute inset-0 opacity-10"></div>
@@ -37,10 +40,13 @@ export const Hero = () => {
               </a>
             </Button>
             
-            <Button variant="outline" size="lg" className="px-8 py-6 border-primary/20 hover:bg-primary/5" asChild>
-              <a href="#how-it-works" className="flex items-center gap-2">
-                Watch 2-Min Demo
-              </a>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="px-8 py-6 border-primary/20 hover:bg-primary/5" 
+              onClick={() => setShowVideoDialog(true)}
+            >
+              Watch Demo
             </Button>
           </div>
           
@@ -111,6 +117,24 @@ export const Hero = () => {
       </div>
       
       <div className="absolute -bottom-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/5 blur-3xl"></div>
+
+      {/* Video Dialog */}
+      <Dialog open={showVideoDialog} onOpenChange={setShowVideoDialog}>
+        <DialogContent className="max-w-4xl p-0">
+          <div className="aspect-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/4DGJMPnyc2M?autoplay=1"
+              title="ProBound Demo Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="rounded-lg"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

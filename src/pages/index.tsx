@@ -17,7 +17,7 @@ const Index = () => {
       <MSPBenefits />
       <MSPUseCases />
       <Partners />
-      <TrustSection />
+      
       <MSPFAQ />
       <CTA />
       <Footer />
