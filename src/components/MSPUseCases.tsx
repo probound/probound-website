@@ -29,31 +29,31 @@ const useCases = [
 
 export const MSPUseCases = () => {
   return (
-    <section className="py-24 bg-muted/20">
-      <div className="container">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <section className="py-16 sm:py-24 bg-muted/20">
+      <div className="container px-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Built for Real MSP Scenarios
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-foreground/70 max-w-2xl mx-auto">
             See how your AI agent handles the most common support requests your team deals with daily
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {useCases.map((useCase, index) => (
             <div 
               key={index}
-              className="group bg-card rounded-xl p-8 border border-border/40 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
+              className="group bg-card rounded-xl p-4 sm:p-6 lg:p-8 border border-border/40 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
             >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                  <useCase.icon className="w-6 h-6" />
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                  <useCase.icon className="w-5 sm:w-6 h-5 sm:h-6" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2">{useCase.title}</h3>
-                  <p className="text-primary mb-3 font-medium">{useCase.description}</p>
-                  <p className="text-foreground/70 text-sm leading-relaxed">{useCase.scenario}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2">{useCase.title}</h3>
+                  <p className="text-primary mb-2 sm:mb-3 font-medium text-sm sm:text-base">{useCase.description}</p>
+                  <p className="text-foreground/70 text-xs sm:text-sm leading-relaxed">{useCase.scenario}</p>
                 </div>
               </div>
             </div>

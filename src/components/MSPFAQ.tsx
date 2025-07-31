@@ -34,28 +34,28 @@ const faqs = [
 
 export const MSPFAQ = () => {
   return (
-    <section className="py-24 bg-muted/20">
-      <div className="container max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <section className="py-16 sm:py-24 bg-muted/20">
+      <div className="container max-w-4xl mx-auto px-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Common Questions from MSPs
           </h2>
-          <p className="text-lg text-foreground/70">
+          <p className="text-base sm:text-lg text-foreground/70">
             Get answers to the most frequent concerns about implementing AI voice agents
           </p>
         </div>
         
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="border border-border/40 rounded-lg px-6 py-2 bg-card"
+              className="border border-border/40 rounded-lg px-4 sm:px-6 py-2 bg-card"
             >
-              <AccordionTrigger className="text-left text-lg hover:no-underline">
+              <AccordionTrigger className="text-left text-base sm:text-lg hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-foreground/70 leading-relaxed">
+              <AccordionContent className="text-foreground/70 leading-relaxed text-sm sm:text-base">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
