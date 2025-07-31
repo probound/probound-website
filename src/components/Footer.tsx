@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-start mb-4">
               <h1 className="text-3xl font-bold gradient-text">probound</h1>
             </div>
-            <p className="text-foreground/70 text-sm">AI Digital Workers for Sales and Customer Support</p>
+            <p className="text-foreground/70 text-sm">Voice AI Agent for IT Support</p>
             
             <div className="flex gap-4 mt-6">
               <Link to="https://www.linkedin.com/company/proboundai/" className="hover:opacity-80 transition-opacity">
@@ -45,7 +45,7 @@ const Footer = () => {
 
         <div className="border-t border-border/40 pt-8">
           <p className="text-foreground/50 text-sm">
-            © {currentYear} probound. All rights reserved.
+            © {currentYear} ProBound. All rights reserved.
           </p>
         </div>
       </div>

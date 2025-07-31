@@ -14,7 +14,7 @@ export const CTA = () => {
               <span>Ready to Transform Your Support Operations?</span>
             </div>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6">
-              Join 150+ MSPs Already Using Voice AI
+              Join MSPs Already Using ProBound
             </h2>
             <p className="text-lg text-foreground/70 mb-10 max-w-2xl mx-auto">
               Reduce ticket volumes, improve client satisfaction, and scale your business without expanding your support team.
