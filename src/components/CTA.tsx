@@ -28,7 +28,7 @@ export const CTA = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6" asChild>
-                <a href="https://cal.com/kemiprobound/ai" className="flex items-center gap-2">
+                <a href="https://app.probound.ai" className="flex items-center gap-2">
                   Start Free Trial
                 </a>
               </Button>
