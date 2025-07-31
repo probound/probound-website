@@ -46,7 +46,7 @@ export const Hero = () => {
               className="px-6 sm:px-8 py-4 sm:py-6 border-primary/20 hover:bg-primary/5 w-full sm:w-auto" 
               asChild
             >
-              <a href="https://app.probound.ai/auth/sign-in">Start Free Trial</a>
+              <a href="https://app.probound.ai/auth/sign-up">Start for Free</a>
             </Button>
           </div>
           
