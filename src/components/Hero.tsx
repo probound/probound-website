@@ -60,8 +60,8 @@ export const Hero = () => {
               <div className="text-sm text-foreground/70">Client Support</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold gradient-text">3s</div>
-              <div className="text-sm text-foreground/70">Response Time</div>
+              <div className="text-2xl sm:text-3xl font-bold gradient-text">30%</div>
+              <div className="text-sm text-foreground/70">Increase in CSAT</div>
             </div>
           </div>
         </div>
