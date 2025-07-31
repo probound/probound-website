@@ -31,7 +31,7 @@ export const Hero = () => {
             Automate IT support calls, reduce ticket volumes by 60%, and deliver instant responses to your clients even after hours.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 mb-16 w-full max-w-md sm:max-w-none">
+          <div className="flex flex-col sm:flex-row gap-4 mb-16 w-full max-w-md sm:max-w-none justify-center items-center">
             <Button size="lg" className="gradient-bg px-6 sm:px-8 py-4 sm:py-6 text-white hover:opacity-90 w-full sm:w-auto" asChild>
               <a href="tel:+14153198525" className="flex items-center justify-center gap-2">
                 <PhoneCall className="w-4 sm:w-5 h-4 sm:h-5" />
