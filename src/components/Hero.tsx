@@ -50,9 +50,7 @@ export const Hero = () => {
             </Button>
           </div>
           
-          <p className="text-sm text-foreground/60 mb-16">no credit card required</p>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 border-t border-border/40 pt-8 w-full max-w-4xl">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 border-t border-border/40 pt-8 w-full max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold gradient-text">60%</div>
               <div className="text-sm text-foreground/70">Ticket Reduction</div>
