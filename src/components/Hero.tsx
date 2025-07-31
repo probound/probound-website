@@ -3,11 +3,13 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Dialog, DialogContent } from "./ui/dialog";
 import { PhoneCall, ChevronRight, Shield, Calendar, ArrowRight, Headphones } from "lucide-react";
+import { AnimatedBackground } from "./AnimatedBackground";
 
 export const Hero = () => {
   const [showVideoDialog, setShowVideoDialog] = useState(false);
   return (
     <div className="relative overflow-hidden bg-background pt-16 sm:pt-20">
+      <AnimatedBackground />
       <div className="bg-grid absolute inset-0 opacity-10"></div>
       
       <div className="container relative z-10">

@@ -8,23 +8,19 @@ import { TrustSection } from "@/components/TrustSection";
 import { MSPFAQ } from "@/components/MSPFAQ";
 import { CTA } from "@/components/CTA";
 import Footer from "@/components/Footer";
-import { AnimatedBackground } from "@/components/AnimatedBackground";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen bg-background text-foreground">
-      <AnimatedBackground />
-      <div className="relative z-10">
-        <Navigation />
-        <Hero />
-        <MSPBenefits />
-        <MSPUseCases />
-        <Partners />
-        
-        <MSPFAQ />
-        <CTA />
-        <Footer />
-      </div>
+    <div className="min-h-screen bg-background text-foreground">
+      <Navigation />
+      <Hero />
+      <MSPBenefits />
+      <MSPUseCases />
+      <Partners />
+      
+      <MSPFAQ />
+      <CTA />
+      <Footer />
     </div>
   );
 };
