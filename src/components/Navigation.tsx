@@ -33,7 +33,7 @@ export const Navigation = () => {
             </Button>
             <Button variant="default" className="gradient-bg hover:opacity-90 text-sm sm:text-base px-3 sm:px-4 py-2" asChild>
               <a href="https://app.probound.ai/auth/sign-up">
-                Start for Free
+                Start for free
               </a>
             </Button>
           </div>

@@ -29,7 +29,7 @@ export const CTA = () => {
               </Button>
               <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto" asChild>
                 <a href="https://app.probound.ai/auth/sign-up" className="flex items-center justify-center gap-2">
-                  Start for Free
+                  Start for free
                 </a>
               </Button>
             </div>
