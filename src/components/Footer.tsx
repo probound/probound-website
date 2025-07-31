@@ -28,7 +28,8 @@ const Footer = () => {
           <div className="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl font-bold mb-6">Contact</h3>
-              <a href="mailto:founders@probound.ai" className="text-foreground/70 hover:text-primary">founders@probound.ai</a>
+              <a href="mailto:founders@probound.ai" className="text-foreground/70 hover:text-primary">Email</a>
+              <a href="https://cal.com/kemiprobound/ai" className="text-foreground/70 hover:text-primary">Book a Demo</a>
             </div>
             
             <div className="space-y-4">

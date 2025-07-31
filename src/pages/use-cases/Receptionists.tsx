@@ -31,9 +31,9 @@ const Receptionists = () => {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="hover:border-primary" asChild>
-                  <a href="https://cal.com/kemiprobound/ai" className="flex items-center gap-2">
-                    <Briefcase className="w-5 h-5" />
-                    Schedule Demo
+                  <a href="tel:+14153198525" className="flex items-center gap-2">
+                    <PhoneCall className="w-5 h-5" />
+                    Speak with Kelly
                   </a>
                 </Button>
               </div>

@@ -28,7 +28,7 @@ export const Navigation = () => {
           <div className="flex items-center gap-4">
             <Button variant="default" className="gradient-bg hover:opacity-90" asChild>
               <a href="https://cal.com/kemiprobound/ai">
-                Schedule Demo
+                Get Started
               </a>
             </Button>
           </div>

@@ -28,14 +28,14 @@ export const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mb-10">
-            Automate Tier 1 support calls, reduce ticket volumes by 60%, and deliver instant responses to your clients—even after hours.
+            Automate IT support calls, reduce ticket volumes by 60%, and deliver instant responses to your clients even after hours.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button size="lg" className="gradient-bg px-8 py-6 text-white hover:opacity-90" asChild>
-              <a href="https://cal.com/kemiprobound/ai" className="flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                Book a Demo
+              <a href="tel:+14153198525" className="flex items-center gap-2">
+                <PhoneCall className="w-5 h-5" />
+                Speak with Kelly
                 <ArrowRight className="w-4 h-4" />
               </a>
             </Button>
@@ -49,6 +49,8 @@ export const Hero = () => {
               Watch Demo
             </Button>
           </div>
+          
+          <p className="text-sm text-foreground/60 mb-16">no credit card required</p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-border/40 pt-8 w-full max-w-4xl">
             <div className="text-center">
