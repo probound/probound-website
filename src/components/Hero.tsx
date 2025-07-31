@@ -44,9 +44,9 @@ export const Hero = () => {
               variant="outline" 
               size="lg" 
               className="px-8 py-6 border-primary/20 hover:bg-primary/5" 
-              onClick={() => setShowVideoDialog(true)}
+              asChild
             >
-              Watch Demo
+              <a href="https://app.probound.ai">Start Free Trial</a>
             </Button>
           </div>
           
