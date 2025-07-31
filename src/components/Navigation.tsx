@@ -27,7 +27,7 @@ export const Navigation = () => {
 
           <div className="flex items-center gap-2 sm:gap-4">
             <Button variant="default" className="gradient-bg hover:opacity-90 text-sm sm:text-base px-3 sm:px-4 py-2" asChild>
-              <a href="https://app.probound.ai">
+              <a href="https://app.probound.ai/auth/sign-in">
                 Sign-In
               </a>
             </Button>
