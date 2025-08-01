@@ -7,28 +7,36 @@ import {
 
 const faqs = [
   {
-    question: "How secure is ProBound for handling sensitive client data?",
-    answer: "ProBound is SOC 2 compliant and follows enterprise-grade security protocols. All voice data is encrypted in transit and at rest. We're also GDPR compliant and undergo regular security audits. Your client data never leaves our secure infrastructure."
+    question: "What exactly does your AI agent do?",
+    answer: "Our AI voice agent handles triage, dispatch, and Level 1 IT support tasks like password resets, email issues, and printer problems. It collects details, resolves common issues, and escalates when needed."
   },
   {
-    question: "How complex is the integration with our PSA tools?",
-    answer: "Integration is designed to be simple. We support direct API connections with ConnectWise, Autotask, and other major PSA platforms. Most integrations are completed within 48 hours with our white-glove setup service."
+    question: "Does the agent integrate with our PSA tools like ConnectWise or Autotask?",
+    answer: "Yes. We integrate with ConnectWise, Autotask, and Datto to enable seamless ticket creation, updates, and resolution tracking."
   },
   {
-    question: "How accurate is the AI in understanding technical issues?",
-    answer: "Our AI is specifically trained on IT support scenarios and achieves 95%+ accuracy on common Tier 1 issues. For complex problems it can't handle, it intelligently escalates to your team with full conversation context and diagnostic information."
+    question: "What happens when the AI agent can't solve the issue?",
+    answer: "It creates a detailed ticket and routes it to the right technician based on your internal escalation rules."
   },
   {
-    question: "What happens when the AI can't resolve an issue?",
-    answer: "The AI seamlessly transfers calls to your available technicians with a complete summary of the conversation, diagnostic steps taken, and client information. Your team gets the full context without the client having to repeat themselves."
+    question: "Can we customize the workflows and voice of the agent?",
+    answer: "Yes. You can personalize greetings, escalation logic, authentication flows, ticket formatting, and even choose the agent's voice."
   },
   {
-    question: "Can we customize the AI's responses for our brand?",
-    answer: "Absolutely. The AI can be trained on your specific procedures, terminology, and brand voice. It can reference your knowledge base, follow your escalation procedures, and maintain your professional standards."
+    question: "How does the AI verify who's calling?",
+    answer: "We use saved contacts, allowlist verification, and MFA to confirm user identity before taking action."
   },
   {
-    question: "What's the ROI timeline for MSPs using ProBound?",
-    answer: "Most MSPs see positive ROI within 2-3 months. By reducing Tier 1 call volume by 60%+ and enabling 24/7 support without additional staffing, the cost savings and increased client satisfaction typically pay for the solution quickly."
+    question: "Can we assign different agents to different customers or departments?",
+    answer: "Yes. You can assign agents per customer, location, or workflow. Each agent runs in a secure, isolated workspace."
+  },
+  {
+    question: "Is the platform secure and compliant?",
+    answer: "Yes. We're building toward SOC 2 Type II compliance. All data is encrypted, and each customer environment is siloed for security."
+  },
+  {
+    question: "How long does it take to get started?",
+    answer: "Set up takes under 15 minutes. You can connect your Microsoft tenant and deploy your first agent the same day."
   }
 ];
 
