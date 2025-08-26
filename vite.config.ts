@@ -27,8 +27,12 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: {
-          'vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui': ['@radix-ui/react-dialog', '@radix-ui/react-slot', '@radix-ui/react-navigation-menu']
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-router': ['react-router-dom'],
+          'vendor-radix': ['@radix-ui/react-dialog', '@radix-ui/react-slot', '@radix-ui/react-navigation-menu', '@radix-ui/react-accordion', '@radix-ui/react-toast'],
+          'vendor-icons': ['lucide-react'],
+          'vendor-utils': ['clsx', 'tailwind-merge', 'class-variance-authority'],
+          'components': ['@/components/ui/button', '@/components/ui/card', '@/components/ui/accordion']
         }
       }
     },
