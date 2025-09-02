@@ -8,6 +8,7 @@ import { TrustSection } from "@/components/TrustSection";
 import { MSPFAQ } from "@/components/MSPFAQ";
 import { CTA } from "@/components/CTA";
 import Footer from "@/components/Footer";
+import { NewsletterPopup } from "@/components/NewsletterPopup";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <MSPFAQ />
       <CTA />
       <Footer />
+      <NewsletterPopup />
     </div>
   );
 };
