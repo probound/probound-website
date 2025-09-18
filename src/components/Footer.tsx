@@ -30,7 +30,7 @@ const Footer = () => {
               <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6">Contact</h3>
               <div className="flex flex-col space-y-2">
                 <a href="mailto:founders@probound.ai" className="text-foreground/70 hover:text-primary text-sm sm:text-base">Email</a>
-                <a href="https://cal.com/kemiprobound/ai" className="text-foreground/70 hover:text-primary text-sm sm:text-base">Book a Demo</a>
+                <a href="https://outlook.office365.com/book/ProBoundBookingPage@probound.ai/" className="text-foreground/70 hover:text-primary text-sm sm:text-base">Book a Demo</a>
               </div>
             </div>
             
