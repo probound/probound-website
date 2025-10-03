@@ -1,14 +1,11 @@
-
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Dialog, DialogContent } from "./ui/dialog";
 import { PhoneCall, ChevronRight, Shield, Calendar, ArrowRight, Headphones } from "lucide-react";
 import { AnimatedBackground } from "./AnimatedBackground";
-
 export const Hero = () => {
   const [showVideoDialog, setShowVideoDialog] = useState(false);
-  return (
-    <div className="relative overflow-hidden bg-background pt-16 sm:pt-20">
+  return <div className="relative overflow-hidden bg-background pt-16 sm:pt-20">
       <AnimatedBackground />
       <div className="bg-grid absolute inset-0 opacity-10"></div>
       
@@ -16,7 +13,7 @@ export const Hero = () => {
         <div className="flex flex-col items-center text-center pt-16 md:pt-32 pb-20 px-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-primary/20 rounded-full text-sm text-primary bg-primary/5">
             <Shield className="w-4 h-4" />
-            <span>Voice AI for IT Support & MSPs</span>
+            <span>Introducing Voice AI IT Support</span>
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-6 max-w-4xl leading-tight">
@@ -42,12 +39,7 @@ export const Hero = () => {
               </a>
             </Button>
             
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="px-6 sm:px-8 py-4 sm:py-6 border-primary/20 hover:bg-primary/5 w-full sm:w-auto" 
-              asChild
-            >
+            <Button variant="outline" size="lg" className="px-6 sm:px-8 py-4 sm:py-6 border-primary/20 hover:bg-primary/5 w-full sm:w-auto" asChild>
               <a href="https://outlook.office365.com/book/ProBoundBookingPage@probound.ai/">Book a demo</a>
             </Button>
           </div>
@@ -124,19 +116,9 @@ export const Hero = () => {
       <Dialog open={showVideoDialog} onOpenChange={setShowVideoDialog}>
         <DialogContent className="max-w-4xl p-0">
           <div className="aspect-video">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube.com/embed/4DGJMPnyc2M?autoplay=1"
-              title="ProBound Demo Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="rounded-lg"
-            />
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4DGJMPnyc2M?autoplay=1" title="ProBound Demo Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg" />
           </div>
         </DialogContent>
       </Dialog>
-    </div>
-  );
+    </div>;
 };
