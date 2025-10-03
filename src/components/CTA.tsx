@@ -1,10 +1,7 @@
-
 import { Button } from "./ui/button";
 import { Rocket, ArrowRight, PhoneCall } from "lucide-react";
-
 export const CTA = () => {
-  return (
-    <section className="relative py-16 sm:py-24 overflow-hidden bg-background">
+  return <section className="relative py-16 sm:py-24 overflow-hidden bg-background">
       <div className="bg-grid absolute inset-0 opacity-5"></div>
       <div className="container relative z-10 px-4">
         <div className="bg-background rounded-2xl px-4 sm:px-8 py-12 sm:py-16 md:p-16 relative overflow-hidden border border-border/40">
@@ -13,9 +10,7 @@ export const CTA = () => {
               <Rocket className="w-3 sm:w-4 h-3 sm:h-4" />
               <span>Ready to Transform Your Support Operations?</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4 sm:mb-6">
-              Join MSPs Already Using ProBound
-            </h2>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4 sm:mb-6">Start Using ProBound Today</h2>
             <p className="text-base sm:text-lg text-foreground/70 mb-8 sm:mb-10 max-w-2xl mx-auto">
               Reduce ticket volumes, improve client satisfaction, and scale your business without expanding your support team.
             </p>
@@ -41,6 +36,5 @@ export const CTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
