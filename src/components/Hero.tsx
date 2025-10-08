@@ -13,7 +13,7 @@ export const Hero = () => {
         <div className="flex flex-col items-center text-center pt-16 md:pt-32 pb-20 px-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-primary/20 rounded-full text-sm text-primary bg-primary/5">
             <Shield className="w-4 h-4" />
-            <span>Introducing Voice AI IT Support</span>
+            <span>Built for IT & MSPs</span>
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-6 max-w-4xl leading-tight">
