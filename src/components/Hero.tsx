@@ -7,55 +7,135 @@ export const Hero = () => {
   const [showVideoDialog, setShowVideoDialog] = useState(false);
   return <div className="relative overflow-hidden bg-background pt-16 sm:pt-20">
       <AnimatedBackground />
-      <div className="bg-grid absolute inset-0 opacity-10"></div>
+      <div className="bg-grid absolute inset-0 opacity-20"></div>
+      <div className="bg-dot-pattern absolute inset-0 opacity-10"></div>
+      
+      {/* Blue glow effects */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 blue-glow opacity-20 blur-3xl"></div>
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
       
       <div className="container relative z-10">
-        <div className="flex flex-col items-center text-center pt-16 md:pt-32 pb-20 px-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-primary/20 rounded-full text-sm text-primary bg-primary/5">
-            <Shield className="w-4 h-4" />
-            <span>Built for IT & MSPs</span>
-          </div>
-          
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-6 max-w-4xl leading-tight">
-            Meet Your 24/7
-            <br />
-            <span className="gradient-text">
-              Voice AI Agent
-            </span>
-            <br />
-            for IT Support
-          </h1>
-          
-          <p className="text-base sm:text-lg md:text-xl text-foreground/70 max-w-3xl mb-10 px-4">
-            Automate IT support calls, reduce ticket volumes by 60%, and deliver instant responses to your clients even after hours.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 mb-16 w-full max-w-md sm:max-w-none justify-center items-center">
-            <Button size="lg" className="gradient-bg px-6 sm:px-8 py-4 sm:py-6 text-white hover:opacity-90 w-full sm:w-auto" asChild>
-              <a href="tel:+14153198525" className="flex items-center justify-center gap-2">
-                <PhoneCall className="w-4 sm:w-5 h-4 sm:h-5" />
-                Speak with Kelly
-                <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4" />
-              </a>
-            </Button>
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 pt-20 md:pt-32 pb-20 px-4">
+          {/* Left content */}
+          <div className="flex-1 text-center lg:text-left max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 border border-primary/30 rounded-full text-sm bg-primary/10 backdrop-blur-sm">
+              <Shield className="w-4 h-4 text-primary" />
+              <span className="text-primary font-medium">Built for IT & MSPs</span>
+            </div>
             
-            <Button variant="outline" size="lg" className="px-6 sm:px-8 py-4 sm:py-6 border-primary/20 hover:bg-primary/5 w-full sm:w-auto" asChild>
-              <a href="https://outlook.office365.com/book/ProBoundBookingPage@probound.ai/">Book a demo</a>
-            </Button>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-6 leading-[1.1]">
+              Meet Your 24/7
+              <br />
+              <span className="gradient-text">
+                Voice AI Agent
+              </span>
+              <br />
+              for IT Support
+            </h1>
+            
+            <p className="text-lg sm:text-xl text-foreground/60 mb-10 leading-relaxed">
+              Automate IT support calls, reduce ticket volumes by 60%, and deliver instant responses to your clients even after hours.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 mb-16 justify-center lg:justify-start">
+              <Button size="lg" className="gradient-bg px-8 py-6 text-white font-semibold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all" asChild>
+                <a href="tel:+14153198525" className="flex items-center justify-center gap-2">
+                  <PhoneCall className="w-5 h-5" />
+                  Speak with Kelly
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </Button>
+              
+              <Button variant="outline" size="lg" className="px-8 py-6 border-primary/30 bg-background/50 backdrop-blur-sm hover:bg-primary/10 hover:border-primary/50 transition-all font-semibold" asChild>
+                <a href="https://outlook.office365.com/book/ProBoundBookingPage@probound.ai/">Book a demo</a>
+              </Button>
+            </div>
+            
+            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border/30">
+              <div className="text-center lg:text-left">
+                <div className="text-3xl sm:text-4xl font-bold gradient-text">60%</div>
+                <div className="text-sm text-foreground/60 mt-1">Ticket Reduction</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-3xl sm:text-4xl font-bold gradient-text">24/7</div>
+                <div className="text-sm text-foreground/60 mt-1">Client Support</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="text-3xl sm:text-4xl font-bold gradient-text">30%</div>
+                <div className="text-sm text-foreground/60 mt-1">Increase in CSAT</div>
+              </div>
+            </div>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 border-t border-border/40 pt-8 w-full max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold gradient-text">60%</div>
-              <div className="text-sm text-foreground/70">Ticket Reduction</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold gradient-text">24/7</div>
-              <div className="text-sm text-foreground/70">Client Support</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold gradient-text">30%</div>
-              <div className="text-sm text-foreground/70">Increase in CSAT</div>
+          {/* Right visual mockup */}
+          <div className="flex-1 relative max-w-xl lg:max-w-none">
+            <div className="relative aspect-square lg:aspect-auto lg:h-[600px]">
+              {/* Main card */}
+              <div className="absolute inset-0 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl rounded-3xl border border-primary/20 p-8 shadow-2xl card-glow">
+                <div className="space-y-6">
+                  {/* Header */}
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                        <Headphones className="w-5 h-5 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <div className="font-semibold">Good Evening</div>
+                        <div className="text-sm text-foreground/60">AI Support Active</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Active call card */}
+                  <div className="bg-primary/20 backdrop-blur-sm rounded-2xl p-6 border border-primary/30">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <PhoneCall className="w-5 h-5 text-primary" />
+                        <span className="font-medium">Active Call</span>
+                      </div>
+                      <div className="px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full border border-green-500/30">
+                        Connected
+                      </div>
+                    </div>
+                    <div className="text-foreground/80 text-sm mb-3">
+                      Password reset request from John Smith
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-foreground/60">
+                      <Calendar className="w-4 h-4" />
+                      <span>01:23 duration</span>
+                    </div>
+                  </div>
+                  
+                  {/* Task list */}
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between p-4 bg-background/50 rounded-xl border border-border/50">
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                        <span className="text-sm">Verify user identity</span>
+                      </div>
+                      <div className="text-xs text-green-400">✓ Complete</div>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-background/50 rounded-xl border border-primary/50">
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 rounded-full bg-primary"></div>
+                        <span className="text-sm">Reset password in AD</span>
+                      </div>
+                      <div className="text-xs text-primary">In Progress...</div>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-background/30 rounded-xl border border-border/30">
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 rounded-full bg-foreground/30"></div>
+                        <span className="text-sm text-foreground/60">Send confirmation email</span>
+                      </div>
+                      <div className="text-xs text-foreground/40">Pending</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/20 rounded-full blur-2xl animate-float-slow"></div>
+              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl animate-float-medium"></div>
             </div>
           </div>
         </div>
@@ -109,8 +189,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      
-      <div className="absolute -bottom-1/2 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-primary/5 blur-3xl"></div>
 
       {/* Video Dialog */}
       <Dialog open={showVideoDialog} onOpenChange={setShowVideoDialog}>
